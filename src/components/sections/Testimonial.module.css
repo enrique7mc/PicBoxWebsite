@@ -1,0 +1,74 @@
+.section {
+  padding: var(--space-4xl) var(--content-padding);
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.quoteText {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--text-3xl);
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.quoteText::before {
+  content: '"';
+}
+
+.quoteText::after {
+  content: '"';
+}
+
+.attribution {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.author {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.role {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.accentTop {
+  position: absolute;
+  top: -30px;
+  left: 10%;
+}
+
+.accentBottom {
+  position: absolute;
+  bottom: -20px;
+  right: 15%;
+}
+
+@media (max-width: 640px) {
+  .quoteText {
+    font-size: var(--text-2xl);
+  }
+
+  .accentTop,
+  .accentBottom {
+    display: none;
+  }
+}

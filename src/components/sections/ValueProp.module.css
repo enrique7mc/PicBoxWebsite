@@ -1,0 +1,29 @@
+.section {
+  padding: var(--space-3xl) var(--content-padding);
+  background-color: var(--color-bg-alt);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-lg);
+}
+
+.dotWrapper {
+  margin-bottom: var(--space-sm);
+}
+
+.text {
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+@media (max-width: 640px) {
+  .text {
+    font-size: var(--text-lg);
+  }
+}

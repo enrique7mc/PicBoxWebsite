@@ -1,0 +1,169 @@
+.section {
+  padding: var(--space-4xl) var(--content-padding);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: var(--space-3xl);
+  max-width: 600px;
+}
+
+.title {
+  line-height: 1.15;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+.card {
+  position: relative;
+  background-color: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+/* Large cards */
+.cardLarge {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.cardLabel {
+  color: var(--color-accent-2);
+}
+
+.cardTitle {
+  font-size: var(--text-2xl);
+}
+
+.cardMockup {
+  flex-shrink: 0;
+}
+
+.cardMockup > * {
+  max-width: 200px;
+}
+
+.accentDecor {
+  position: absolute;
+  bottom: var(--space-md);
+  left: var(--space-md);
+}
+
+/* Accent card (full width) */
+.cardAccent {
+  grid-column: span 2;
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-2) 0%,
+    #7a8e6a 100%
+  );
+  color: var(--color-bg);
+}
+
+.cardAccent .cardLabel {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.cardAccent .cardTitle {
+  color: var(--color-bg);
+}
+
+.accentContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.accentText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-width: 500px;
+}
+
+.weatherPreview {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-md);
+}
+
+.weatherIcon {
+  font-size: 3rem;
+}
+
+.weatherTemp {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--text-4xl);
+}
+
+/* Small cards */
+.cardSmall {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.cardTitleSmall {
+  font-size: var(--text-xl);
+}
+
+.smallCardAccent {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+}
+
+@media (max-width: 968px) {
+  .cardLarge {
+    grid-template-columns: 1fr;
+  }
+
+  .cardMockup {
+    justify-self: center;
+  }
+
+  .cardAccent {
+    grid-column: span 1;
+  }
+
+  .accentContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .weatherPreview {
+    align-self: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardAccent {
+    grid-column: span 1;
+  }
+}

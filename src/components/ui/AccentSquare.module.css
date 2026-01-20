@@ -1,0 +1,20 @@
+.square {
+  flex-shrink: 0;
+}
+
+.dot {
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.gold {
+  background-color: var(--color-accent-1);
+}
+
+.sage {
+  background-color: var(--color-accent-2);
+}
+
+.rose {
+  background-color: var(--color-accent-3);
+}

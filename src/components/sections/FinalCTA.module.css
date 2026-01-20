@@ -1,0 +1,93 @@
+.section {
+  padding: var(--space-4xl) var(--content-padding);
+  background-color: var(--color-bg-alt);
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.title {
+  line-height: 1.15;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.appStoreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: left;
+}
+
+.priceAmount {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--text-2xl);
+  color: var(--color-accent-1);
+}
+
+.accentLeft {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.accentRight {
+  position: absolute;
+  bottom: 30px;
+  right: 10%;
+}
+
+@media (max-width: 640px) {
+  .features {
+    gap: var(--space-md);
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .price {
+    text-align: center;
+    align-items: center;
+  }
+
+  .accentLeft,
+  .accentRight {
+    display: none;
+  }
+}
