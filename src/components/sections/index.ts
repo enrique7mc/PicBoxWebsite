@@ -2,6 +2,7 @@ export * from './WaitlistHero';
 export * from './ValueProp';
 export * from './WaitlistForm';
 export * from './FeatureTeaser';
+export * from './LifestylePreview';
 export * from './ShowcaseHero';
 export * from './FeaturesGrid';
 export * from './UseCases';

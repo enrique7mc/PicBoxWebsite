@@ -2,6 +2,7 @@ import { PageWrapper } from '../components/layout';
 import {
   ShowcaseHero,
   FeaturesGrid,
+  LifestylePreview,
   UseCases,
   Testimonial,
   FinalCTA,
@@ -12,6 +13,7 @@ export function ShowcasePage() {
     <PageWrapper footerVariant="full">
       <ShowcaseHero />
       <FeaturesGrid />
+      <LifestylePreview />
       <UseCases />
       <Testimonial />
       <FinalCTA />

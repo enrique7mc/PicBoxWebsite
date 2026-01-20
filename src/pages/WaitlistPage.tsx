@@ -4,6 +4,7 @@ import {
   ValueProp,
   WaitlistForm,
   FeatureTeaser,
+  LifestylePreview,
 } from '../components/sections';
 
 export function WaitlistPage() {
@@ -11,6 +12,7 @@ export function WaitlistPage() {
     <PageWrapper footerVariant="minimal">
       <WaitlistHero />
       <ValueProp />
+      <LifestylePreview variant="waitlist" />
       <WaitlistForm />
       <FeatureTeaser />
     </PageWrapper>
