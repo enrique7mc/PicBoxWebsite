@@ -36,9 +36,8 @@ export function WaitlistForm() {
     try {
       // FreeWaitlists.com API integration
       const waitlistId = import.meta.env.VITE_WAITLIST_ID;
-      const apiKey = import.meta.env.VITE_WAITLIST_API_KEY;
 
-      if (!waitlistId || !apiKey) {
+      if (!waitlistId) {
         // Demo mode - simulate success
         await new Promise((resolve) => setTimeout(resolve, 1000));
         setPosition(Math.floor(Math.random() * 500) + 1);
@@ -47,12 +46,11 @@ export function WaitlistForm() {
       }
 
       const response = await fetch(
-        `https://api.freewaitlists.com/v1/waitlists/${waitlistId}/subscribers`,
+        `https://api.freewaitlists.com/waitlists/${waitlistId}`,
         {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            Authorization: `Bearer ${apiKey}`,
           },
           body: JSON.stringify({ email: data.email }),
         }

@@ -5,6 +5,7 @@ interface MockupPlaceholderProps {
   variant?: 'ipad' | 'ipad-small' | 'square';
   rotate?: number;
   label?: string;
+  image?: string;
   className?: string;
 }
 
@@ -12,6 +13,7 @@ export function MockupPlaceholder({
   variant = 'ipad',
   rotate = 0,
   label,
+  image,
   className = '',
 }: MockupPlaceholderProps) {
   return (
@@ -24,8 +26,14 @@ export function MockupPlaceholder({
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
       <div className={styles.screen}>
-        <div className={styles.gradient} />
-        {label && <span className={styles.label}>{label}</span>}
+        {image ? (
+          <img src={image} alt={label || 'Screenshot'} className={styles.image} />
+        ) : (
+          <>
+            <div className={styles.gradient} />
+            {label && <span className={styles.label}>{label}</span>}
+          </>
+        )}
       </div>
       {(variant === 'ipad' || variant === 'ipad-small') && (
         <div className={styles.frame}>

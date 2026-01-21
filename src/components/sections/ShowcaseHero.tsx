@@ -3,6 +3,7 @@ import { DisplayHeading, Text, Label, SerifItalic } from '../ui';
 import { LinkButton } from '../ui';
 import { MockupPlaceholder } from '../ui';
 import { AccentSquare } from '../ui';
+import heroImage from '../../assets/screenshots/hero.jpeg';
 import styles from './ShowcaseHero.module.css';
 
 export function ShowcaseHero() {
@@ -69,6 +70,7 @@ export function ShowcaseHero() {
             variant="ipad"
             rotate={-2}
             label="Main App Screenshot"
+            image={heroImage}
           />
           <AccentSquare
             color="sage"

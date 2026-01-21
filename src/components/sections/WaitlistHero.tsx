@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { DisplayHeading, Label, SerifItalic } from '../ui';
 import { AccentSquare } from '../ui';
 import { MockupPlaceholder } from '../ui';
+import heroImage from '../../assets/screenshots/hero.jpeg';
 import styles from './WaitlistHero.module.css';
 
 export function WaitlistHero() {
@@ -50,6 +51,7 @@ export function WaitlistHero() {
             variant="ipad"
             rotate={3}
             label="Hero Screenshot"
+            image={heroImage}
           />
           <AccentSquare
             color="rose"

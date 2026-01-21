@@ -2,6 +2,9 @@ import { motion } from 'framer-motion';
 import { Heading, Text, Label, SerifItalic } from '../ui';
 import { MockupPlaceholder } from '../ui';
 import { AccentDot } from '../ui';
+import kenBurnsImage from '../../assets/screenshots/ken-burns.jpeg';
+import faceDetectionImage from '../../assets/screenshots/face-detection.jpeg';
+import autoStartImage from '../../assets/screenshots/auto-start.jpeg';
 import styles from './FeatureTeaser.module.css';
 
 const features = [
@@ -10,18 +13,21 @@ const features = [
     title: 'Ken Burns Effect',
     description: 'Subtle, cinematic pan and zoom brings your photos to life.',
     label: 'Ken Burns Demo',
+    image: kenBurnsImage,
   },
   {
     number: '02',
     title: 'Smart Face Detection',
     description: 'Intelligent framing keeps faces perfectly centered.',
     label: 'Face Detection',
+    image: faceDetectionImage,
   },
   {
     number: '03',
     title: 'Always Ready',
     description: 'Auto-start on power and night mode for 24/7 display.',
     label: 'Auto Start',
+    image: autoStartImage,
   },
 ];
 
@@ -89,6 +95,7 @@ export function FeatureTeaser() {
               <MockupPlaceholder
                 variant="ipad-small"
                 label={feature.label}
+                image={feature.image}
                 className={styles.mockup}
               />
               <div className={styles.cardContent}>

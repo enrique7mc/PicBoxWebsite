@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { Heading, Text, Label, SerifItalic } from '../ui';
 import { MockupPlaceholder, AccentSquare } from '../ui';
+import kenBurnsImage from '../../assets/screenshots/ken-burns.jpeg';
+import faceDetectionImage from '../../assets/screenshots/face-detection.jpeg';
 import styles from './FeaturesGrid.module.css';
 
 const containerVariants = {
@@ -62,7 +64,7 @@ export function FeaturesGrid() {
               </Text>
             </div>
             <div className={styles.cardMockup}>
-              <MockupPlaceholder variant="ipad-small" label="Ken Burns Demo" />
+              <MockupPlaceholder variant="ipad-small" label="Ken Burns Demo" image={kenBurnsImage} />
             </div>
             <AccentSquare
               color="gold"
@@ -88,7 +90,7 @@ export function FeaturesGrid() {
               </Text>
             </div>
             <div className={styles.cardMockup}>
-              <MockupPlaceholder variant="ipad-small" label="Face Detection" />
+              <MockupPlaceholder variant="ipad-small" label="Face Detection" image={faceDetectionImage} />
             </div>
             <AccentSquare
               color="sage"
@@ -116,7 +118,10 @@ export function FeaturesGrid() {
               </div>
               <div className={styles.weatherPreview}>
                 <span className={styles.weatherIcon}>☀️</span>
-                <span className={styles.weatherTemp}>72°</span>
+                <div className={styles.weatherInfo}>
+                  <span className={styles.weatherTemp}>72°</span>
+                  <span className={styles.weatherCondition}>Clear</span>
+                </div>
               </div>
             </div>
           </motion.article>

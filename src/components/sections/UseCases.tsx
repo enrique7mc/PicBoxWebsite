@@ -60,30 +60,28 @@ export function UseCases() {
           </Text>
         </motion.div>
 
-        <motion.ul
-          className={styles.list}
+        <motion.div
+          className={styles.grid}
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-50px' }}
         >
           {useCases.map((useCase, index) => (
-            <motion.li key={index} className={styles.item} variants={itemVariants}>
-              <div className={styles.bullet}>
+            <motion.article key={index} className={styles.card} variants={itemVariants}>
+              <div className={styles.cardHeader}>
                 <AccentDot
                   color={index % 3 === 0 ? 'gold' : index % 3 === 1 ? 'sage' : 'rose'}
                   size={10}
                 />
               </div>
-              <div className={styles.content}>
-                <Text className={styles.itemTitle}>{useCase.title}</Text>
-                <Text size="sm" muted>
-                  {useCase.description}
-                </Text>
-              </div>
-            </motion.li>
+              <Text className={styles.cardTitle}>{useCase.title}</Text>
+              <Text size="sm" muted>
+                {useCase.description}
+              </Text>
+            </motion.article>
           ))}
-        </motion.ul>
+        </motion.div>
       </div>
     </section>
   );

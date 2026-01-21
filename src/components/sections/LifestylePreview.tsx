@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Heading, Text, SerifItalic } from '../ui';
 import { AccentSquare } from '../ui';
+import lifestyleImage from '../../assets/screenshots/lifestyle.jpeg';
 import styles from './LifestylePreview.module.css';
 
 interface LifestylePreviewProps {
@@ -19,8 +20,7 @@ export function LifestylePreview({ variant = 'default' }: LifestylePreviewProps)
           transition={{ duration: 0.6 }}
         >
           <div className={styles.imagePlaceholder}>
-            <div className={styles.placeholderGradient} />
-            <span className={styles.placeholderLabel}>Lifestyle Photo</span>
+            <img src={lifestyleImage} alt="iPad displaying PicBox in a home setting" className={styles.lifestyleImage} />
           </div>
           <AccentSquare
             color="gold"
