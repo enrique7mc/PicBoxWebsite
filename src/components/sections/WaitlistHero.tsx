@@ -10,7 +10,7 @@ import styles from './WaitlistHero.module.css';
 
 const heroImages = [heroImage1, heroImage2, heroImage3];
 
-const ROTATION_INTERVAL = 5000; // 5 seconds
+const ROTATION_INTERVAL = 8000; // 8 seconds
 
 export function WaitlistHero() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -69,7 +69,7 @@ export function WaitlistHero() {
             rotate={3}
             label="Hero Screenshot"
           >
-            <AnimatePresence mode="wait">
+            <AnimatePresence>
               <motion.img
                 key={currentIndex}
                 src={heroImages[currentIndex]}
@@ -77,8 +77,8 @@ export function WaitlistHero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.8 }}
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                transition={{ duration: 1 }}
+                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
               />
             </AnimatePresence>
           </MockupPlaceholder>
