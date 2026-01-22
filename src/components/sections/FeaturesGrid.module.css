@@ -66,70 +66,89 @@
   left: var(--space-md);
 }
 
-/* Accent card (full width) */
-.cardAccent {
+/* Night Mode accent card (full width) */
+.cardNightMode {
   grid-column: span 2;
+  background: linear-gradient(
+    135deg,
+    #2a2d3a 0%,
+    #1a1c24 100%
+  );
+  color: var(--color-warm-white);
+}
+
+.cardNightMode .cardLabel {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.cardNightMode .cardTitle,
+.cardNightMode h3 {
+  color: #fff;
+}
+
+.cardNightMode p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.nightModeContent {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.nightModeText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  color: #fff;
+}
+
+.nightModeSlider {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Weather widget for large card */
+.weatherWidget {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg) var(--space-xl);
   background: linear-gradient(
     135deg,
     var(--color-accent-2) 0%,
     #7a8e6a 100%
   );
-  color: var(--color-bg);
-}
-
-.cardAccent .cardLabel {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.cardAccent .cardTitle {
-  color: var(--color-bg);
-}
-
-.accentContent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--space-xl);
-}
-
-.accentText {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  max-width: 500px;
-}
-
-.weatherPreview {
-  display: flex;
-  align-items: center;
-  gap: var(--space-lg);
-  padding: var(--space-lg) var(--space-xl);
-  background: rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-md);
+  color: var(--color-bg);
 }
 
-.weatherIcon {
-  font-size: 3.5rem;
+.weatherWidgetIcon {
+  font-size: 3rem;
   line-height: 1;
 }
 
-.weatherInfo {
+.weatherWidgetInfo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.weatherTemp {
+.weatherWidgetTemp {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: var(--text-4xl);
+  font-size: var(--text-3xl);
   line-height: 1;
+  color: var(--color-bg);
 }
 
-.weatherCondition {
+.weatherWidgetCondition {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: var(--text-lg);
+  font-size: var(--text-base);
   color: var(--color-warm-white);
   opacity: 0.9;
 }
@@ -160,17 +179,18 @@
     justify-self: center;
   }
 
-  .cardAccent {
+  .cardNightMode {
     grid-column: span 1;
   }
 
-  .accentContent {
-    flex-direction: column;
+  .nightModeContent {
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
-  .weatherPreview {
-    align-self: center;
+  .nightModeSlider {
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
@@ -179,7 +199,7 @@
     grid-template-columns: 1fr;
   }
 
-  .cardAccent {
+  .cardNightMode {
     grid-column: span 1;
   }
 }

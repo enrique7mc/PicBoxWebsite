@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { Heading, Text, Label, SerifItalic } from '../ui';
-import { MockupPlaceholder, AccentSquare } from '../ui';
+import { MockupPlaceholder, AccentSquare, ImageComparisonSlider } from '../ui';
 import kenBurnsImage from '../../assets/screenshots/ken-burns.jpg';
 import faceDetectionImage from '../../assets/screenshots/face-detection.jpg';
+import normalModeImage from '../../assets/screenshots/normal-mode.jpg';
+import darkModeImage from '../../assets/screenshots/dark-mode.jpg';
 import styles from './FeaturesGrid.module.css';
 
 const containerVariants = {
@@ -100,28 +102,30 @@ export function FeaturesGrid() {
             />
           </motion.article>
 
-          {/* Weather Overlay - Full width accent */}
+          {/* Night Mode - Full width accent with comparison slider */}
           <motion.article
-            className={`${styles.card} ${styles.cardAccent}`}
+            className={`${styles.card} ${styles.cardNightMode}`}
             variants={itemVariants}
           >
-            <div className={styles.accentContent}>
-              <div className={styles.accentText}>
-                <Label className={styles.cardLabel}>Live Data</Label>
+            <div className={styles.nightModeContent}>
+              <div className={styles.nightModeText}>
+                <Label className={styles.cardLabel}>Thoughtful</Label>
                 <Heading as="h3" serif className={styles.cardTitle}>
-                  Weather Overlay
+                  Night Mode
                 </Heading>
                 <Text>
-                  Optional weather widget displays current conditions, so your
-                  photo frame doubles as an at-a-glance weather station.
+                  Enable Night Mode to dim your display after dark. Perfect for
+                  bedrooms and living spaces where a bright screen would be distracting.
                 </Text>
               </div>
-              <div className={styles.weatherPreview}>
-                <span className={styles.weatherIcon}>☀️</span>
-                <div className={styles.weatherInfo}>
-                  <span className={styles.weatherTemp}>72°</span>
-                  <span className={styles.weatherCondition}>Clear</span>
-                </div>
+              <div className={styles.nightModeSlider}>
+                <ImageComparisonSlider
+                  beforeImage={normalModeImage}
+                  afterImage={darkModeImage}
+                  beforeLabel="Normal"
+                  afterLabel="Night"
+                  initialPosition={50}
+                />
               </div>
             </div>
           </motion.article>
@@ -141,24 +145,33 @@ export function FeaturesGrid() {
             </Text>
           </motion.article>
 
-          {/* Night Mode - Small card */}
+          {/* Weather Overlay - Large card with weather widget */}
           <motion.article
-            className={`${styles.card} ${styles.cardSmall}`}
+            className={`${styles.card} ${styles.cardLarge}`}
             variants={itemVariants}
           >
-            <Label className={styles.cardLabel}>Thoughtful</Label>
-            <Heading as="h3" serif className={styles.cardTitleSmall}>
-              Night Mode
-            </Heading>
-            <Text size="sm" muted>
-              Screen dims automatically at night. Respects your sleep schedule
-              while keeping your photos ready.
-            </Text>
+            <div className={styles.cardContent}>
+              <Label className={styles.cardLabel}>Live Data</Label>
+              <Heading as="h3" serif className={styles.cardTitle}>
+                Weather Overlay
+              </Heading>
+              <Text muted>
+                Optional weather widget displays current conditions, so your
+                photo frame doubles as an at-a-glance weather station.
+              </Text>
+            </div>
+            <div className={styles.weatherWidget}>
+              <span className={styles.weatherWidgetIcon}>☀️</span>
+              <div className={styles.weatherWidgetInfo}>
+                <span className={styles.weatherWidgetTemp}>72°</span>
+                <span className={styles.weatherWidgetCondition}>Clear</span>
+              </div>
+            </div>
             <AccentSquare
               color="rose"
-              size={12}
-              rotate={15}
-              className={styles.smallCardAccent}
+              size={14}
+              rotate={-10}
+              className={styles.accentDecor}
             />
           </motion.article>
         </motion.div>
