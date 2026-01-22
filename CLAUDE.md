@@ -55,6 +55,8 @@ Copy `.env.example` to `.env` and configure:
 
 Configured for Vercel with SPA rewrites and static asset caching (see `vercel.json`).
 
+- `vercel --prod` - Deploy to production via Vercel CLI
+
 ## Next Steps
 
 ### Waitlist Setup
