@@ -130,18 +130,18 @@ export function FeaturesGrid() {
             </div>
           </motion.article>
 
-          {/* Auto-Start - Small card */}
+          {/* Privacy - Small card */}
           <motion.article
             className={`${styles.card} ${styles.cardSmall}`}
             variants={itemVariants}
           >
-            <Label className={styles.cardLabel}>Convenient</Label>
-            <Heading as="h3" serif className={styles.cardTitleSmall}>
-              Auto-Start
+            <Label className={styles.cardLabel}>Private</Label>
+            <Heading as="h3" serif className={styles.cardTitle}>
+              Your Photos Never Leave
             </Heading>
-            <Text size="sm" muted>
-              Automatically launches when you plug in power. Perfect for
-              nightstands and kitchen counters.
+            <Text muted>
+              All features run entirely on your device. We never see, access,
+              or store your photos.
             </Text>
           </motion.article>
 

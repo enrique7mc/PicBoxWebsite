@@ -5,8 +5,8 @@ import styles from './UseCases.module.css';
 
 const useCases = [
   {
-    title: 'Repurpose old iPads',
-    description: "Give your old iPad a new life as a dedicated photo display instead of letting it collect dust.",
+    title: 'Home office companion',
+    description: "Your favorite memories on your desk while you work. A personal touch that makes any workspace feel like home.",
   },
   {
     title: 'Kitchen countertop display',
