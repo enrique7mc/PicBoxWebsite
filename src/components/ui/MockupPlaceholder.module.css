@@ -101,10 +101,9 @@
   object-fit: cover;
 }
 
-/* On mobile, use contain to ensure full image is visible including time indicator */
+/* On mobile, anchor image to bottom to keep time indicator visible */
 @media (max-width: 968px) {
   .image {
-    object-fit: contain;
-    background-color: #000;
+    object-position: center bottom;
   }
 }
