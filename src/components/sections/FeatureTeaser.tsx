@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import { Heading, Text, Label, SerifItalic } from '../ui';
-import { MockupPlaceholder } from '../ui';
+import { MockupPlaceholder, ImageComparisonSlider } from '../ui';
 import { AccentDot } from '../ui';
-import kenBurnsImage from '../../assets/screenshots/ken-burns.jpeg';
-import faceDetectionImage from '../../assets/screenshots/face-detection.jpeg';
-import autoStartImage from '../../assets/screenshots/auto-start.jpeg';
+import kenBurnsImage from '../../assets/screenshots/ken-burns.jpg';
+import faceDetectionImage from '../../assets/screenshots/face-detection.jpg';
+import normalModeImage from '../../assets/screenshots/normal-mode.jpg';
+import darkModeImage from '../../assets/screenshots/dark-mode.jpg';
 import styles from './FeatureTeaser.module.css';
 
 const features = [
@@ -17,19 +18,19 @@ const features = [
   },
   {
     number: '02',
+    title: 'Always Ready',
+    description: 'Auto-start on power and night mode for 24/7 display.',
+    label: 'Night Mode',
+    hasSlider: true,
+  },
+  {
+    number: '03',
     title: 'Smart Face Detection',
     description: 'Intelligent framing keeps faces perfectly centered.',
     label: 'Face Detection',
     image: faceDetectionImage,
   },
-  {
-    number: '03',
-    title: 'Always Ready',
-    description: 'Auto-start on power and night mode for 24/7 display.',
-    label: 'Auto Start',
-    image: autoStartImage,
-  },
-];
+] as const;
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -92,12 +93,29 @@ export function FeatureTeaser() {
                   size={8}
                 />
               </div>
-              <MockupPlaceholder
-                variant="ipad-small"
-                label={feature.label}
-                image={feature.image}
-                className={styles.mockup}
-              />
+              {'hasSlider' in feature && feature.hasSlider ? (
+                <MockupPlaceholder
+                  variant="ipad-small"
+                  label={feature.label}
+                  className={styles.mockup}
+                >
+                  <ImageComparisonSlider
+                    beforeImage={normalModeImage}
+                    afterImage={darkModeImage}
+                    beforeAlt="Normal display mode"
+                    afterAlt="Dark display mode"
+                    beforeLabel="Normal"
+                    afterLabel="Dark"
+                  />
+                </MockupPlaceholder>
+              ) : (
+                <MockupPlaceholder
+                  variant="ipad-small"
+                  label={feature.label}
+                  image={'image' in feature ? feature.image : undefined}
+                  className={styles.mockup}
+                />
+              )}
               <div className={styles.cardContent}>
                 <Label className={styles.featureTitle}>{feature.title}</Label>
                 <Text size="sm" muted>

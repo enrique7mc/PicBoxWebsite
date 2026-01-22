@@ -1,11 +1,28 @@
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { DisplayHeading, Label, SerifItalic } from '../ui';
 import { AccentSquare } from '../ui';
 import { MockupPlaceholder } from '../ui';
-import heroImage from '../../assets/screenshots/hero.jpeg';
+import heroImage1 from '../../assets/screenshots/hero.jpg';
+import heroImage2 from '../../assets/screenshots/hero-2.jpg';
+import heroImage3 from '../../assets/screenshots/hero-3.jpg';
 import styles from './WaitlistHero.module.css';
 
+const heroImages = [heroImage1, heroImage2, heroImage3];
+
+const ROTATION_INTERVAL = 5000; // 5 seconds
+
 export function WaitlistHero() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % heroImages.length);
+    }, ROTATION_INTERVAL);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
@@ -51,8 +68,20 @@ export function WaitlistHero() {
             variant="ipad"
             rotate={3}
             label="Hero Screenshot"
-            image={heroImage}
-          />
+          >
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={currentIndex}
+                src={heroImages[currentIndex]}
+                alt="PicBox app screenshot"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8 }}
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            </AnimatePresence>
+          </MockupPlaceholder>
           <AccentSquare
             color="rose"
             size={28}

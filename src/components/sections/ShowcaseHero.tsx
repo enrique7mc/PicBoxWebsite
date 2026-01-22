@@ -1,12 +1,28 @@
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { DisplayHeading, Text, Label, SerifItalic } from '../ui';
 import { LinkButton } from '../ui';
 import { MockupPlaceholder } from '../ui';
 import { AccentSquare } from '../ui';
-import heroImage from '../../assets/screenshots/hero.jpeg';
+import heroImage1 from '../../assets/screenshots/hero.jpg';
+import heroImage2 from '../../assets/screenshots/hero-2.jpg';
+import heroImage3 from '../../assets/screenshots/hero-3.jpg';
 import styles from './ShowcaseHero.module.css';
 
+const heroImages = [heroImage1, heroImage2, heroImage3];
+const ROTATION_INTERVAL = 5000;
+
 export function ShowcaseHero() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % heroImages.length);
+    }, ROTATION_INTERVAL);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
@@ -70,8 +86,20 @@ export function ShowcaseHero() {
             variant="ipad"
             rotate={-2}
             label="Main App Screenshot"
-            image={heroImage}
-          />
+          >
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={currentIndex}
+                src={heroImages[currentIndex]}
+                alt="PicBox app screenshot"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8 }}
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            </AnimatePresence>
+          </MockupPlaceholder>
           <AccentSquare
             color="sage"
             size={24}

@@ -7,6 +7,7 @@ interface MockupPlaceholderProps {
   label?: string;
   image?: string;
   className?: string;
+  children?: React.ReactNode;
 }
 
 export function MockupPlaceholder({
@@ -15,6 +16,7 @@ export function MockupPlaceholder({
   label,
   image,
   className = '',
+  children,
 }: MockupPlaceholderProps) {
   return (
     <motion.div
@@ -26,7 +28,9 @@ export function MockupPlaceholder({
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
       <div className={styles.screen}>
-        {image ? (
+        {children ? (
+          children
+        ) : image ? (
           <img src={image} alt={label || 'Screenshot'} className={styles.image} />
         ) : (
           <>

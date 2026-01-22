@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { Heading, Text, Label, SerifItalic } from '../ui';
 import { MockupPlaceholder, AccentSquare } from '../ui';
-import kenBurnsImage from '../../assets/screenshots/ken-burns.jpeg';
-import faceDetectionImage from '../../assets/screenshots/face-detection.jpeg';
+import kenBurnsImage from '../../assets/screenshots/ken-burns.jpg';
+import faceDetectionImage from '../../assets/screenshots/face-detection.jpg';
 import styles from './FeaturesGrid.module.css';
 
 const containerVariants = {
