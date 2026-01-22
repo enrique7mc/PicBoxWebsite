@@ -11,8 +11,18 @@
     "privacy": "Política de privacidad"
   },
   "footer": {
-    "navigate": "Navegar",
-    "resources": "Recursos",
+    "tagline": "El marco de fotos que tu iPad estaba destinado a ser.",
+    "navigate": {
+      "title": "Navegar",
+      "waitlist": "Lista de espera",
+      "app": "App"
+    },
+    "resources": {
+      "title": "Recursos",
+      "faq": "Preguntas frecuentes",
+      "support": "Soporte",
+      "privacy": "Política de privacidad"
+    },
     "copyright": "© {{year}} PicBox. Todos los derechos reservados."
   },
   "cta": {

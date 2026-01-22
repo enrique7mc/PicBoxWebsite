@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useTranslation, Trans } from 'react-i18next';
 import { Heading, Text, Label, SerifItalic } from '../ui';
 import { MockupPlaceholder, ImageComparisonSlider } from '../ui';
 import { AccentDot } from '../ui';
@@ -8,29 +9,6 @@ import normalModeImage from '../../assets/screenshots/normal-mode.jpg';
 import darkModeImage from '../../assets/screenshots/dark-mode.jpg';
 import styles from './FeatureTeaser.module.css';
 
-const features = [
-  {
-    number: '01',
-    title: 'Ken Burns Effect',
-    description: 'Subtle, cinematic pan and zoom brings your photos to life.',
-    label: 'Ken Burns Demo',
-    image: kenBurnsImage,
-  },
-  {
-    number: '02',
-    title: 'Always Ready',
-    description: 'Auto-start on power and night mode for 24/7 display.',
-    label: 'Night Mode',
-    hasSlider: true,
-  },
-  {
-    number: '03',
-    title: 'Smart Face Detection',
-    description: 'Intelligent framing keeps faces perfectly centered.',
-    label: 'Face Detection',
-    image: faceDetectionImage,
-  },
-] as const;
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -52,6 +30,32 @@ const itemVariants = {
 };
 
 export function FeatureTeaser() {
+  const { t } = useTranslation('home');
+
+  const features = [
+    {
+      number: '01',
+      title: t('featureTeaser.features.kenBurns.title'),
+      description: t('featureTeaser.features.kenBurns.description'),
+      label: t('featureTeaser.features.kenBurns.label'),
+      image: kenBurnsImage,
+    },
+    {
+      number: '02',
+      title: t('featureTeaser.features.autoStart.title'),
+      description: t('featureTeaser.features.autoStart.description'),
+      label: t('featureTeaser.features.autoStart.label'),
+      hasSlider: true,
+    },
+    {
+      number: '03',
+      title: t('featureTeaser.features.faceDetection.title'),
+      description: t('featureTeaser.features.faceDetection.description'),
+      label: t('featureTeaser.features.faceDetection.label'),
+      image: faceDetectionImage,
+    },
+  ] as const;
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -63,7 +67,9 @@ export function FeatureTeaser() {
           transition={{ duration: 0.5 }}
         >
           <Heading as="h2" serif className={styles.title}>
-            A glimpse of what's <SerifItalic>coming</SerifItalic>
+            <Trans i18nKey="featureTeaser.heading" ns="home">
+              A glimpse of what's <SerifItalic>coming</SerifItalic>
+            </Trans>
           </Heading>
         </motion.div>
 
@@ -102,10 +108,10 @@ export function FeatureTeaser() {
                   <ImageComparisonSlider
                     beforeImage={normalModeImage}
                     afterImage={darkModeImage}
-                    beforeAlt="Normal display mode"
-                    afterAlt="Dark display mode"
-                    beforeLabel="Normal"
-                    afterLabel="Dark"
+                    beforeAlt={t('featureTeaser.comparison.beforeAlt')}
+                    afterAlt={t('featureTeaser.comparison.afterAlt')}
+                    beforeLabel={t('featureTeaser.comparison.before')}
+                    afterLabel={t('featureTeaser.comparison.after')}
                   />
                 </MockupPlaceholder>
               ) : (

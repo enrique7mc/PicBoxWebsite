@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation, Trans } from 'react-i18next';
 import { Heading, Text, SerifItalic, Label } from '../ui';
 import { Button } from '../ui';
 import { Input } from '../ui';
@@ -18,6 +19,7 @@ interface ApiResponse {
 }
 
 export function WaitlistForm() {
+  const { t } = useTranslation('home');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [position, setPosition] = useState<number | null>(null);
@@ -62,10 +64,10 @@ export function WaitlistForm() {
         setPosition(result.position || null);
         setIsSuccess(true);
       } else {
-        setApiError(result.message || 'Failed to join waitlist. Please try again.');
+        setApiError(result.message || t('waitlistForm.errors.failed'));
       }
     } catch {
-      setApiError('Something went wrong. Please try again later.');
+      setApiError(t('waitlistForm.errors.generic'));
     } finally {
       setIsSubmitting(false);
     }
@@ -82,10 +84,12 @@ export function WaitlistForm() {
           transition={{ duration: 0.6 }}
         >
           <Heading as="h2" serif className={styles.title}>
-            Be the <SerifItalic>first</SerifItalic> to know
+            <Trans i18nKey="waitlistForm.title" ns="home">
+              Be the <SerifItalic>first</SerifItalic> to know
+            </Trans>
           </Heading>
           <Text muted className={styles.subtitle}>
-            Join the waitlist and get early access when PicBox launches.
+            {t('waitlistForm.subtitle')}
           </Text>
 
           <AnimatePresence mode="wait">
@@ -100,14 +104,14 @@ export function WaitlistForm() {
                 <div className={styles.inputGroup}>
                   <Input
                     type="email"
-                    placeholder="Enter your email"
+                    placeholder={t('waitlistForm.placeholder')}
                     fullWidth
                     error={errors.email?.message}
                     {...register('email', {
-                      required: 'Email is required',
+                      required: t('waitlistForm.validation.required'),
                       pattern: {
                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                        message: 'Invalid email address',
+                        message: t('waitlistForm.validation.invalid'),
                       },
                     })}
                   />
@@ -116,7 +120,7 @@ export function WaitlistForm() {
                     disabled={isSubmitting}
                     className={styles.submitBtn}
                   >
-                    {isSubmitting ? 'Joining...' : 'Join Waitlist'}
+                    {isSubmitting ? t('waitlistForm.buttonLoading') : t('waitlistForm.button')}
                   </Button>
                 </div>
                 {apiError && (
@@ -135,11 +139,11 @@ export function WaitlistForm() {
               >
                 <div className={styles.successIcon}>✓</div>
                 <Text size="lg" className={styles.successText}>
-                  You're on the list!
+                  {t('waitlistForm.success')}
                 </Text>
                 {position && (
                   <div className={styles.positionBadge}>
-                    <Label>Your position</Label>
+                    <Label>{t('waitlistForm.position')}</Label>
                     <span className={styles.positionNumber}>#{position}</span>
                   </div>
                 )}

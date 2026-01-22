@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation, Trans } from 'react-i18next';
 import { DisplayHeading, Text, Label, SerifItalic } from '../ui';
 import { LinkButton } from '../ui';
 import { MockupPlaceholder } from '../ui';
@@ -13,6 +14,7 @@ const heroImages = [heroImage1, heroImage2, heroImage3];
 const ROTATION_INTERVAL = 8000; // 8 seconds
 
 export function ShowcaseHero() {
+  const { t } = useTranslation('home');
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -33,14 +35,15 @@ export function ShowcaseHero() {
           transition={{ duration: 0.6 }}
         >
           <DisplayHeading className={styles.title}>
-            Your memories,
-            <br />
-            <SerifItalic>beautifully</SerifItalic> displayed
+            <Trans i18nKey="showcaseHero.heading" ns="home">
+              Your memories,
+              <br />
+              <SerifItalic>beautifully</SerifItalic> displayed
+            </Trans>
           </DisplayHeading>
 
           <Text size="lg" muted className={styles.subtitle}>
-            Transform your iPad into a stunning digital photo frame with cinematic
-            effects and intelligent framing.
+            {t('showcaseHero.subtitle')}
           </Text>
 
           <div className={styles.actions}>

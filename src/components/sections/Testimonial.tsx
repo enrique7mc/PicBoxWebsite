@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 import { AccentSquare } from "../ui";
 import styles from "./Testimonial.module.css";
 
 export function Testimonial() {
+  const { t } = useTranslation('home');
+
   return (
     <section className={styles.section}>
       <motion.div
@@ -21,13 +24,11 @@ export function Testimonial() {
 
         <blockquote className={styles.quote}>
           <p className={styles.quoteText}>
-            Finally, a photo frame app that feels like it was made by people who
-            actually care about design. My old iPad now lives on my desk and I
-            couldn't be happier.
+            {t('testimonial.quote')}
           </p>
           <footer className={styles.attribution}>
-            <span className={styles.author}>Sarah M.</span>
-            <span className={styles.role}>Early Beta Tester</span>
+            <span className={styles.author}>{t('testimonial.author')}</span>
+            <span className={styles.role}>{t('testimonial.role')}</span>
           </footer>
         </blockquote>
 

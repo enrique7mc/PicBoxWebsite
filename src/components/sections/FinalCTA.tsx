@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion';
+import { useTranslation, Trans } from 'react-i18next';
 import { Heading, Text, Label, SerifItalic } from '../ui';
 import { LinkButton } from '../ui';
 import { AccentSquare, AccentDot } from '../ui';
 import styles from './FinalCTA.module.css';
 
 export function FinalCTA() {
+  const { t } = useTranslation('home');
+
   return (
     <section className={styles.section}>
       <motion.div
@@ -22,21 +25,23 @@ export function FinalCTA() {
         />
 
         <Heading as="h2" serif className={styles.title}>
-          Ready to transform your <SerifItalic>iPad?</SerifItalic>
+          <Trans i18nKey="finalCta.heading" ns="home">
+            Ready to transform your <SerifItalic>iPad?</SerifItalic>
+          </Trans>
         </Heading>
 
         <div className={styles.features}>
           <div className={styles.feature}>
             <AccentDot color="gold" size={8} />
-            <Text size="sm">No subscription required</Text>
+            <Text size="sm">{t('finalCta.features.noSubscription')}</Text>
           </div>
           <div className={styles.feature}>
             <AccentDot color="sage" size={8} />
-            <Text size="sm">Works offline</Text>
+            <Text size="sm">{t('finalCta.features.worksOffline')}</Text>
           </div>
           <div className={styles.feature}>
             <AccentDot color="rose" size={8} />
-            <Text size="sm">Privacy-first design</Text>
+            <Text size="sm">{t('finalCta.features.privacyFirst')}</Text>
           </div>
         </div>
 

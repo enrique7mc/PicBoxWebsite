@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { AccentDot } from '../ui';
 import styles from './Footer.module.css';
 
@@ -8,6 +9,7 @@ interface FooterProps {
 }
 
 export function Footer({ variant = 'minimal' }: FooterProps) {
+  const { t } = useTranslation('common');
   const currentYear = new Date().getFullYear();
 
   if (variant === 'minimal') {
@@ -25,7 +27,7 @@ export function Footer({ variant = 'minimal' }: FooterProps) {
             <AccentDot color="sage" size={6} />
           </div>
           <p className={styles.copyright}>
-            &copy; {currentYear} PicBox. All rights reserved.
+            {t('footer.copyright', { year: currentYear })}
           </p>
         </div>
       </motion.footer>
@@ -45,31 +47,31 @@ export function Footer({ variant = 'minimal' }: FooterProps) {
           <div className={styles.brandColumn}>
             <span className={styles.logo}>PicBox</span>
             <p className={styles.tagline}>
-              The photo frame your iPad was meant to be.
+              {t('footer.tagline')}
             </p>
           </div>
 
           <div className={styles.linksColumn}>
-            <h4 className={styles.columnTitle}>Navigate</h4>
+            <h4 className={styles.columnTitle}>{t('footer.navigate.title')}</h4>
             <nav className={styles.linksList}>
-              <Link to="/" className={styles.link}>Waitlist</Link>
-              <Link to="/app" className={styles.link}>App</Link>
+              <Link to="/" className={styles.link}>{t('footer.navigate.waitlist')}</Link>
+              <Link to="/app" className={styles.link}>{t('footer.navigate.app')}</Link>
             </nav>
           </div>
 
           <div className={styles.linksColumn}>
-            <h4 className={styles.columnTitle}>Resources</h4>
+            <h4 className={styles.columnTitle}>{t('footer.resources.title')}</h4>
             <nav className={styles.linksList}>
-              <Link to="/faq" className={styles.link}>FAQ</Link>
-              <a href="mailto:support@picbox.app" className={styles.link}>Support</a>
-              <Link to="/privacy" className={styles.link}>Privacy Policy</Link>
+              <Link to="/faq" className={styles.link}>{t('footer.resources.faq')}</Link>
+              <a href="mailto:support@picbox.app" className={styles.link}>{t('footer.resources.support')}</a>
+              <Link to="/privacy" className={styles.link}>{t('footer.resources.privacy')}</Link>
             </nav>
           </div>
         </div>
 
         <div className={styles.bottomBar}>
           <p className={styles.copyright}>
-            &copy; {currentYear} PicBox. All rights reserved.
+            {t('footer.copyright', { year: currentYear })}
           </p>
           <div className={styles.dots}>
             <AccentDot color="gold" size={6} />

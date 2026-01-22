@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation, Trans } from 'react-i18next';
 import { DisplayHeading, Label, SerifItalic } from '../ui';
 import { AccentSquare } from '../ui';
 import { MockupPlaceholder } from '../ui';
@@ -13,6 +14,7 @@ const heroImages = [heroImage1, heroImage2, heroImage3];
 const ROTATION_INTERVAL = 8000; // 8 seconds
 
 export function WaitlistHero() {
+  const { t } = useTranslation('home');
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -32,16 +34,18 @@ export function WaitlistHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <Label className={styles.badge}>Coming Soon</Label>
+          <Label className={styles.badge}>{t('waitlistHero.badge')}</Label>
 
           <DisplayHeading className={styles.title}>
-            <SerifItalic>Coming</SerifItalic>
-            <br />
-            <SerifItalic>soon</SerifItalic>
+            <Trans i18nKey="waitlistHero.heading" ns="home">
+              <SerifItalic>Coming</SerifItalic>
+              <br />
+              <SerifItalic>soon</SerifItalic>
+            </Trans>
           </DisplayHeading>
 
           <p className={styles.tagline}>
-            THE PHOTO FRAME YOUR iPAD WAS MEANT TO BE
+            {t('waitlistHero.tagline')}
           </p>
 
           <AccentSquare
