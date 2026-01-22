@@ -100,3 +100,11 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* On mobile, use contain to ensure full image is visible including time indicator */
+@media (max-width: 968px) {
+  .image {
+    object-fit: contain;
+    background-color: #000;
+  }
+}
