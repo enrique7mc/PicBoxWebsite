@@ -105,6 +105,7 @@
 
   .content {
     text-align: center;
+    margin-top: var(--space-xl);
   }
 
   .description {

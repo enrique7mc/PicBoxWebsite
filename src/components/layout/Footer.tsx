@@ -60,9 +60,9 @@ export function Footer({ variant = 'minimal' }: FooterProps) {
           <div className={styles.linksColumn}>
             <h4 className={styles.columnTitle}>Resources</h4>
             <nav className={styles.linksList}>
-              <a href="#" className={styles.link}>Press Kit</a>
-              <a href="#" className={styles.link}>Support</a>
-              <a href="#" className={styles.link}>Privacy Policy</a>
+              <Link to="/faq" className={styles.link}>FAQ</Link>
+              <a href="mailto:support@picbox.app" className={styles.link}>Support</a>
+              <Link to="/privacy" className={styles.link}>Privacy Policy</Link>
             </nav>
           </div>
         </div>
