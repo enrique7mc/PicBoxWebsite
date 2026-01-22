@@ -1,0 +1,137 @@
+{
+  "waitlistHero": {
+    "badge": "Coming Soon",
+    "heading": "Coming soon",
+    "tagline": "THE PHOTO FRAME YOUR iPAD WAS MEANT TO BE"
+  },
+  "showcaseHero": {
+    "heading": "Your memories, beautifully displayed",
+    "subtitle": "Transform your iPad into a stunning digital photo frame with cinematic effects and intelligent framing."
+  },
+  "valueProp": {
+    "description": "Transform your iPad into a stunning digital photo frame with cinematic Ken Burns effects and intelligent face detection that keeps your loved ones perfectly framed. No subscriptions, no cloud dependency—just your photos, beautifully displayed."
+  },
+  "waitlistForm": {
+    "title": "Be the first to know",
+    "subtitle": "Join the waitlist and get early access when PicBox launches.",
+    "placeholder": "Enter your email",
+    "button": "Join Waitlist",
+    "buttonLoading": "Joining...",
+    "success": "You're on the list!",
+    "position": "Your position",
+    "validation": {
+      "required": "Email is required",
+      "invalid": "Invalid email address"
+    },
+    "errors": {
+      "failed": "Failed to join waitlist. Please try again.",
+      "generic": "Something went wrong. Please try again later."
+    }
+  },
+  "featureTeaser": {
+    "heading": "A glimpse of what's coming",
+    "features": {
+      "kenBurns": {
+        "title": "Ken Burns Effect",
+        "description": "Subtle, cinematic pan and zoom brings your photos to life.",
+        "label": "Ken Burns Demo"
+      },
+      "autoStart": {
+        "title": "Always Ready",
+        "description": "Auto-start on power and night mode for 24/7 display.",
+        "label": "Night Mode"
+      },
+      "faceDetection": {
+        "title": "Smart Face Detection",
+        "description": "Intelligent framing keeps faces perfectly centered.",
+        "label": "Face Detection"
+      }
+    },
+    "comparison": {
+      "before": "Normal",
+      "after": "Dark",
+      "beforeAlt": "Normal display mode",
+      "afterAlt": "Dark display mode"
+    }
+  },
+  "featuresGrid": {
+    "heading": "Everything you need for a perfect display",
+    "kenBurns": {
+      "label": "Cinematic",
+      "title": "Ken Burns Effect",
+      "description": "Subtle pan and zoom brings your photos to life with elegant, documentary-style motion that captivates without distracting."
+    },
+    "faceDetection": {
+      "label": "Intelligent",
+      "title": "Smart Face Detection",
+      "description": "Advanced algorithms detect faces and ensure they're always perfectly framed, no matter the photo orientation."
+    },
+    "nightMode": {
+      "label": "Thoughtful",
+      "title": "Night Mode",
+      "description": "Automatically dims and warms the display at night, protecting your sleep while keeping memories visible.",
+      "sliderBefore": "Normal",
+      "sliderAfter": "Night"
+    },
+    "privacy": {
+      "label": "Private",
+      "title": "Your Photos Never Leave",
+      "description": "Everything runs locally on your iPad. No cloud uploads, no accounts, no tracking. Your memories stay yours."
+    },
+    "weather": {
+      "label": "Live Data",
+      "title": "Weather Overlay",
+      "description": "Optional weather display shows current conditions at a glance, beautifully integrated with your photos.",
+      "demo": {
+        "icon": "☀️",
+        "temp": "72°",
+        "condition": "Clear"
+      }
+    }
+  },
+  "lifestylePreview": {
+    "waitlist": {
+      "heading": "Imagine it in your home",
+      "description": "PicBox transforms any iPad into a beautiful digital photo frame that showcases your memories with cinematic elegance."
+    },
+    "default": {
+      "heading": "Designed for everyday life",
+      "description": "Whether it's on your nightstand, kitchen counter, or home office desk, PicBox turns your iPad into a beautiful window to your memories."
+    }
+  },
+  "useCases": {
+    "heading": "Perfect for every home",
+    "subtitle": "Discover how PicBox fits into your daily life.",
+    "cases": {
+      "homeOffice": {
+        "title": "Home office companion",
+        "description": "Keep family memories close while you work from home."
+      },
+      "kitchen": {
+        "title": "Kitchen countertop display",
+        "description": "Brighten up your kitchen with rotating family photos."
+      },
+      "family": {
+        "title": "Family photo showcase",
+        "description": "Turn any room into a gallery of your best moments."
+      },
+      "nightstand": {
+        "title": "Nightstand companion",
+        "description": "Wake up to your favorite memories with Night Mode."
+      }
+    }
+  },
+  "testimonial": {
+    "quote": "Finally, a photo frame app that feels like it was made by people who actually care about design. My old iPad now lives on my desk and I couldn't be happier.",
+    "author": "Sarah M.",
+    "role": "Early Beta Tester"
+  },
+  "finalCta": {
+    "heading": "Ready to transform your iPad?",
+    "features": {
+      "noSubscription": "No subscription required",
+      "worksOffline": "Works offline",
+      "privacyFirst": "Privacy-first design"
+    }
+  }
+}

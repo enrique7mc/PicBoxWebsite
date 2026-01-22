@@ -1,0 +1,52 @@
+{
+  "page": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: 21 de enero de 2025",
+    "intro": "PicBox está diseñado con tu privacidad como principio fundamental. Creemos que tus fotos y datos personales deben permanecer en tu dispositivo, donde pertenecen."
+  },
+  "sections": {
+    "dataAccess": {
+      "title": "Datos a los que Accedemos",
+      "photoLibrary": {
+        "title": "Biblioteca de Fotos",
+        "content": "PicBox solicita acceso a tu Biblioteca de Fotos para mostrar tus fotos como un marco digital. Este acceso es de solo lectura—nunca modificamos, copiamos ni subimos tus fotos a ningún lugar. Todo el procesamiento de fotos ocurre completamente en tu dispositivo."
+      },
+      "location": {
+        "title": "Ubicación",
+        "content": "Si habilitas la función de superposición del clima, PicBox solicita tu ubicación para mostrar las condiciones climáticas locales. Tus datos de ubicación solo se envían al servicio WeatherKit de Apple y nunca se almacenan ni transmiten a otro lugar."
+      }
+    },
+    "dataCollect": {
+      "title": "Datos que Recopilamos",
+      "content": "No recopilamos ningún dato personal. PicBox opera completamente sin conexión, sin cuentas de usuario, sin analíticas y sin rastreo. Tus patrones de uso, metadatos de fotos y preferencias permanecen en tu dispositivo."
+    },
+    "thirdParty": {
+      "title": "Servicios de Terceros",
+      "weatherKit": {
+        "title": "Apple WeatherKit",
+        "content": "Cuando la superposición del clima está habilitada, usamos WeatherKit de Apple para obtener las condiciones actuales. Esto requiere enviar tu ubicación aproximada a Apple. Consulta la política de privacidad de Apple para conocer cómo manejan estos datos."
+      },
+      "appStore": {
+        "title": "App Store",
+        "content": "PicBox se distribuye a través de la App Store de Apple. Apple puede recopilar datos relacionados con tu compra y descarga. Esto se rige por la política de privacidad de Apple, no la nuestra."
+      }
+    },
+    "dataStorage": {
+      "title": "Almacenamiento de Datos",
+      "content": "Todas las configuraciones y preferencias de la app se almacenan localmente en tu dispositivo utilizando mecanismos de almacenamiento estándar de iOS. Nada se sincroniza con la nube ni se respalda en servidores externos."
+    },
+    "children": {
+      "title": "Privacidad de Menores",
+      "content": "PicBox no recopila conscientemente información de menores. Dado que no recopilamos ningún dato personal de ningún usuario, esto aplica a usuarios de todas las edades."
+    },
+    "changes": {
+      "title": "Cambios a Esta Política",
+      "content": "Si hacemos cambios a esta política de privacidad, actualizaremos la fecha de \"Última actualización\" arriba. Los cambios significativos se comunicarán a través de actualizaciones de la app."
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "content": "¿Preguntas sobre privacidad? Escríbenos a",
+      "email": "support@picbox.app"
+    }
+  }
+}

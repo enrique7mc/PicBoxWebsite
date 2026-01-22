@@ -1,0 +1,23 @@
+{
+  "page": {
+    "title": "Preguntas Frecuentes",
+    "intro": "Todo lo que necesitas saber para convertir tu iPad en el marco de fotos digital perfecto."
+  },
+  "sections": {
+    "gettingStarted": "Primeros Pasos",
+    "automation": "Automatización y Atajos",
+    "privacy": "Privacidad y Seguridad",
+    "compatibility": "Compatibilidad",
+    "features": "Características",
+    "performance": "Rendimiento y Batería",
+    "purchase": "Compra y Soporte",
+    "photos": "Fotos y Álbumes",
+    "troubleshooting": "Solución de Problemas",
+    "tips": "Consejos y Trucos",
+    "stillQuestions": "¿Aún Tienes Preguntas?"
+  },
+  "contact": {
+    "text": "Nos encantaría saber de ti. Contáctanos en",
+    "email": "support@picbox.app"
+  }
+}

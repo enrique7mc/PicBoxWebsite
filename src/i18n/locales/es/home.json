@@ -1,0 +1,137 @@
+{
+  "waitlistHero": {
+    "badge": "Próximamente",
+    "heading": "Próximamente",
+    "tagline": "EL MARCO DE FOTOS QUE TU iPAD ESTABA DESTINADO A SER"
+  },
+  "showcaseHero": {
+    "heading": "Tus recuerdos, bellamente mostrados",
+    "subtitle": "Transforma tu iPad en un impresionante marco de fotos digital con efectos cinematográficos y encuadre inteligente."
+  },
+  "valueProp": {
+    "description": "Transforma tu iPad en un impresionante marco de fotos digital con efectos Ken Burns cinematográficos y detección inteligente de rostros que mantiene a tus seres queridos perfectamente encuadrados. Sin suscripciones, sin dependencia de la nube—solo tus fotos, bellamente mostradas."
+  },
+  "waitlistForm": {
+    "title": "Sé el primero en enterarte",
+    "subtitle": "Únete a la lista de espera y obtén acceso anticipado cuando PicBox se lance.",
+    "placeholder": "Ingresa tu correo electrónico",
+    "button": "Unirse a la lista",
+    "buttonLoading": "Uniéndose...",
+    "success": "¡Estás en la lista!",
+    "position": "Tu posición",
+    "validation": {
+      "required": "El correo electrónico es requerido",
+      "invalid": "Dirección de correo inválida"
+    },
+    "errors": {
+      "failed": "Error al unirse a la lista de espera. Por favor intenta de nuevo.",
+      "generic": "Algo salió mal. Por favor intenta más tarde."
+    }
+  },
+  "featureTeaser": {
+    "heading": "Un vistazo a lo que viene",
+    "features": {
+      "kenBurns": {
+        "title": "Efecto Ken Burns",
+        "description": "Un sutil paneo y zoom cinematográfico da vida a tus fotos.",
+        "label": "Demo Ken Burns"
+      },
+      "autoStart": {
+        "title": "Siempre Listo",
+        "description": "Inicio automático al conectar y modo nocturno para visualización 24/7.",
+        "label": "Modo Nocturno"
+      },
+      "faceDetection": {
+        "title": "Detección Inteligente de Rostros",
+        "description": "El encuadre inteligente mantiene los rostros perfectamente centrados.",
+        "label": "Detección de Rostros"
+      }
+    },
+    "comparison": {
+      "before": "Normal",
+      "after": "Oscuro",
+      "beforeAlt": "Modo de visualización normal",
+      "afterAlt": "Modo de visualización oscuro"
+    }
+  },
+  "featuresGrid": {
+    "heading": "Todo lo que necesitas para una visualización perfecta",
+    "kenBurns": {
+      "label": "Cinematográfico",
+      "title": "Efecto Ken Burns",
+      "description": "Un sutil paneo y zoom da vida a tus fotos con un elegante movimiento estilo documental que cautiva sin distraer."
+    },
+    "faceDetection": {
+      "label": "Inteligente",
+      "title": "Detección Inteligente de Rostros",
+      "description": "Algoritmos avanzados detectan rostros y aseguran que siempre estén perfectamente encuadrados, sin importar la orientación de la foto."
+    },
+    "nightMode": {
+      "label": "Considerado",
+      "title": "Modo Nocturno",
+      "description": "Atenúa y calienta automáticamente la pantalla por la noche, protegiendo tu sueño mientras mantiene los recuerdos visibles.",
+      "sliderBefore": "Normal",
+      "sliderAfter": "Nocturno"
+    },
+    "privacy": {
+      "label": "Privado",
+      "title": "Tus Fotos Nunca Salen",
+      "description": "Todo funciona localmente en tu iPad. Sin subidas a la nube, sin cuentas, sin rastreo. Tus recuerdos siguen siendo tuyos."
+    },
+    "weather": {
+      "label": "Datos en Vivo",
+      "title": "Superposición del Clima",
+      "description": "Visualización opcional del clima que muestra las condiciones actuales de un vistazo, bellamente integrada con tus fotos.",
+      "demo": {
+        "icon": "☀️",
+        "temp": "22°",
+        "condition": "Despejado"
+      }
+    }
+  },
+  "lifestylePreview": {
+    "waitlist": {
+      "heading": "Imagínalo en tu hogar",
+      "description": "PicBox transforma cualquier iPad en un hermoso marco de fotos digital que muestra tus recuerdos con elegancia cinematográfica."
+    },
+    "default": {
+      "heading": "Diseñado para la vida cotidiana",
+      "description": "Ya sea en tu mesa de noche, mostrador de cocina o escritorio de oficina, PicBox convierte tu iPad en una hermosa ventana a tus recuerdos."
+    }
+  },
+  "useCases": {
+    "heading": "Perfecto para cada hogar",
+    "subtitle": "Descubre cómo PicBox encaja en tu vida diaria.",
+    "cases": {
+      "homeOffice": {
+        "title": "Compañero de oficina en casa",
+        "description": "Mantén los recuerdos familiares cerca mientras trabajas desde casa."
+      },
+      "kitchen": {
+        "title": "Pantalla para el mostrador de cocina",
+        "description": "Ilumina tu cocina con fotos familiares rotativas."
+      },
+      "family": {
+        "title": "Exhibición de fotos familiares",
+        "description": "Convierte cualquier habitación en una galería de tus mejores momentos."
+      },
+      "nightstand": {
+        "title": "Compañero de mesa de noche",
+        "description": "Despierta con tus recuerdos favoritos gracias al Modo Nocturno."
+      }
+    }
+  },
+  "testimonial": {
+    "quote": "Por fin, una app de marco de fotos que se siente como si estuviera hecha por personas que realmente se preocupan por el diseño. Mi viejo iPad ahora vive en mi escritorio y no podría estar más feliz.",
+    "author": "Sarah M.",
+    "role": "Beta Tester Temprana"
+  },
+  "finalCta": {
+    "heading": "¿Listo para transformar tu iPad?",
+    "features": {
+      "noSubscription": "Sin suscripción requerida",
+      "worksOffline": "Funciona sin conexión",
+      "privacyFirst": "Diseño que prioriza la privacidad"
+    }
+  }
+}

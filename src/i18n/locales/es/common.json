@@ -1,0 +1,27 @@
+{
+  "brand": {
+    "name": "PicBox",
+    "tagline": "El marco de fotos que tu iPad estaba destinado a ser."
+  },
+  "nav": {
+    "waitlist": "Lista de espera",
+    "app": "App",
+    "faq": "Preguntas frecuentes",
+    "support": "Soporte",
+    "privacy": "Política de privacidad"
+  },
+  "footer": {
+    "navigate": "Navegar",
+    "resources": "Recursos",
+    "copyright": "© {{year}} PicBox. Todos los derechos reservados."
+  },
+  "cta": {
+    "downloadAppStore": "Descargar en App Store",
+    "oneTimePurchase": "Compra única",
+    "price": "$4.99"
+  },
+  "accessibility": {
+    "mainAppScreenshot": "Captura de pantalla principal de la app",
+    "heroScreenshot": "Captura de pantalla de PicBox"
+  }
+}

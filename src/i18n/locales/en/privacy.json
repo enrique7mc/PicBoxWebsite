@@ -1,0 +1,52 @@
+{
+  "page": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: January 21, 2025",
+    "intro": "PicBox is designed with your privacy as a core principle. We believe your photos and personal data should stay on your device, where they belong."
+  },
+  "sections": {
+    "dataAccess": {
+      "title": "Data We Access",
+      "photoLibrary": {
+        "title": "Photo Library",
+        "content": "PicBox requests access to your Photo Library to display your photos as a digital frame. This access is read-only—we never modify, copy, or upload your photos anywhere. All photo processing happens entirely on your device."
+      },
+      "location": {
+        "title": "Location",
+        "content": "If you enable the weather overlay feature, PicBox requests your location to show local weather conditions. Your location data is sent only to Apple's WeatherKit service and is never stored or transmitted elsewhere."
+      }
+    },
+    "dataCollect": {
+      "title": "Data We Collect",
+      "content": "We do not collect any personal data. PicBox operates entirely offline with no user accounts, no analytics, and no tracking. Your usage patterns, photo metadata, and preferences stay on your device."
+    },
+    "thirdParty": {
+      "title": "Third-Party Services",
+      "weatherKit": {
+        "title": "Apple WeatherKit",
+        "content": "When weather overlay is enabled, we use Apple's WeatherKit to fetch current conditions. This requires sending your approximate location to Apple. See Apple's privacy policy for details on how they handle this data."
+      },
+      "appStore": {
+        "title": "App Store",
+        "content": "PicBox is distributed through the Apple App Store. Apple may collect data related to your purchase and download. This is governed by Apple's privacy policy, not ours."
+      }
+    },
+    "dataStorage": {
+      "title": "Data Storage",
+      "content": "All app settings and preferences are stored locally on your device using standard iOS storage mechanisms. Nothing is synced to the cloud or backed up to external servers."
+    },
+    "children": {
+      "title": "Children's Privacy",
+      "content": "PicBox does not knowingly collect any information from children. Since we don't collect any personal data from any users, this applies to users of all ages."
+    },
+    "changes": {
+      "title": "Changes to This Policy",
+      "content": "If we make changes to this privacy policy, we'll update the \"Last updated\" date above. Significant changes will be communicated through app updates."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "Questions about privacy? Reach out at",
+      "email": "support@picbox.app"
+    }
+  }
+}
