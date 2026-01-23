@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useTranslation, Trans } from 'react-i18next';
 import { Heading, Text, SerifItalic } from '../ui';
 import { AccentSquare } from '../ui';
 import lifestyleImage from '../../assets/screenshots/lifestyle.jpeg';
@@ -9,6 +10,8 @@ interface LifestylePreviewProps {
 }
 
 export function LifestylePreview({ variant = 'default' }: LifestylePreviewProps) {
+  const { t } = useTranslation('home');
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -45,29 +48,24 @@ export function LifestylePreview({ variant = 'default' }: LifestylePreviewProps)
         >
           <Heading as="h2" serif className={styles.title}>
             {variant === 'waitlist' ? (
-              <>
-                Imagine it in <SerifItalic>your</SerifItalic> home
-              </>
+              <Trans
+                i18nKey="lifestylePreview.waitlist.heading"
+                ns="home"
+                components={{ your: <SerifItalic /> }}
+              />
             ) : (
-              <>
-                Designed for <SerifItalic>everyday</SerifItalic> life
-              </>
+              <Trans
+                i18nKey="lifestylePreview.default.heading"
+                ns="home"
+                components={{ everyday: <SerifItalic /> }}
+              />
             )}
           </Heading>
           <Text muted className={styles.description}>
-            {variant === 'waitlist' ? (
-              <>
-                PicBox transforms any iPad into a beautiful digital photo frame that
-                blends seamlessly into your living space. No clutter, no complexity—just
-                your favorite memories on display.
-              </>
-            ) : (
-              <>
-                Whether it's on your nightstand, kitchen counter, or living room shelf,
-                PicBox turns your iPad into a stunning centerpiece that showcases your
-                most precious memories throughout the day.
-              </>
-            )}
+            {variant === 'waitlist'
+              ? t('lifestylePreview.waitlist.description')
+              : t('lifestylePreview.default.description')
+            }
           </Text>
           <AccentSquare
             color="rose"

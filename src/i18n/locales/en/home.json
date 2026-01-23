@@ -9,7 +9,7 @@
     "subtitle": "Transform your iPad into a stunning digital photo frame with cinematic effects and intelligent framing."
   },
   "valueProp": {
-    "description": "Transform your iPad into a stunning digital photo frame with cinematic Ken Burns effects and intelligent face detection that keeps your loved ones perfectly framed. No subscriptions, no cloud dependency—just your photos, beautifully displayed."
+    "description": "Transform your iPad into a stunning digital photo frame with <cinematic>cinematic</cinematic> Ken Burns effects and intelligent face detection that keeps your loved ones perfectly framed. No subscriptions, no cloud dependency—just your photos, beautifully displayed."
   },
   "waitlistForm": {
     "title": "Be the first to know",
@@ -91,12 +91,12 @@
   },
   "lifestylePreview": {
     "waitlist": {
-      "heading": "Imagine it in your home",
-      "description": "PicBox transforms any iPad into a beautiful digital photo frame that showcases your memories with cinematic elegance."
+      "heading": "Imagine it in <your>your</your> home",
+      "description": "PicBox transforms any iPad into a beautiful digital photo frame that blends seamlessly into your living space. No clutter, no complexity—just your favorite memories on display."
     },
     "default": {
-      "heading": "Designed for everyday life",
-      "description": "Whether it's on your nightstand, kitchen counter, or home office desk, PicBox turns your iPad into a beautiful window to your memories."
+      "heading": "Designed for <everyday>everyday</everyday> life",
+      "description": "Whether it's on your nightstand, kitchen counter, or living room shelf, PicBox turns your iPad into a stunning centerpiece that showcases your most precious memories throughout the day."
     }
   },
   "useCases": {

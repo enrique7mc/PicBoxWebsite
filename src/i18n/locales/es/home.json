@@ -9,7 +9,7 @@
     "subtitle": "Transforma tu iPad en un impresionante marco de fotos digital con efectos cinematográficos y encuadre inteligente."
   },
   "valueProp": {
-    "description": "Transforma tu iPad en un impresionante marco de fotos digital con efectos Ken Burns cinematográficos y detección inteligente de rostros que mantiene a tus seres queridos perfectamente encuadrados. Sin suscripciones, sin dependencia de la nube—solo tus fotos, bellamente mostradas."
+    "description": "Transforma tu iPad en un impresionante marco de fotos digital con efectos Ken Burns <cinematic>cinematográficos</cinematic> y detección inteligente de rostros que mantiene a tus seres queridos perfectamente encuadrados. Sin suscripciones, sin dependencia de la nube—solo tus fotos, bellamente mostradas."
   },
   "waitlistForm": {
     "title": "Sé el primero en enterarte",
@@ -91,12 +91,12 @@
   },
   "lifestylePreview": {
     "waitlist": {
-      "heading": "Imagínalo en tu hogar",
-      "description": "PicBox transforma cualquier iPad en un hermoso marco de fotos digital que muestra tus recuerdos con elegancia cinematográfica."
+      "heading": "Imagínalo en <your>tu</your> hogar",
+      "description": "PicBox transforma cualquier iPad en un hermoso marco de fotos digital que se integra perfectamente en tu espacio vital. Sin desorden, sin complejidad—solo tus recuerdos favoritos en exhibición."
     },
     "default": {
-      "heading": "Diseñado para la vida cotidiana",
-      "description": "Ya sea en tu mesa de noche, mostrador de cocina o escritorio de oficina, PicBox convierte tu iPad en una hermosa ventana a tus recuerdos."
+      "heading": "Diseñado para la vida <everyday>cotidiana</everyday>",
+      "description": "Ya sea en tu mesa de noche, mostrador de cocina o estante de la sala, PicBox convierte tu iPad en una pieza central impresionante que muestra tus recuerdos más preciados durante todo el día."
     }
   },
   "useCases": {

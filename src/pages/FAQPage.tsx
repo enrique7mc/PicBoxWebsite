@@ -190,6 +190,7 @@ const tips = [
 
 export function FAQPage() {
   const { t } = useTranslation('faq');
+  const { t: tCommon } = useTranslation('common');
 
   return (
     <PageWrapper footerVariant="minimal">
