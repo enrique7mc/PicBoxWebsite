@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useTranslation, Trans } from 'react-i18next';
 import { Heading, Text, Label, SerifItalic } from '../ui';
 import { MockupPlaceholder, AccentSquare, ImageComparisonSlider } from '../ui';
 import kenBurnsImage from '../../assets/screenshots/ken-burns.jpg';
@@ -27,6 +28,8 @@ const itemVariants = {
 };
 
 export function FeaturesGrid() {
+  const { t } = useTranslation('home');
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -38,7 +41,9 @@ export function FeaturesGrid() {
           transition={{ duration: 0.5 }}
         >
           <Heading as="h2" serif className={styles.title}>
-            Everything you need for a <SerifItalic>perfect</SerifItalic> display
+            <Trans i18nKey="featuresGrid.heading" ns="home">
+              Everything you need for a <SerifItalic>perfect</SerifItalic> display
+            </Trans>
           </Heading>
         </motion.div>
 
@@ -55,14 +60,12 @@ export function FeaturesGrid() {
             variants={itemVariants}
           >
             <div className={styles.cardContent}>
-              <Label className={styles.cardLabel}>Cinematic</Label>
+              <Label className={styles.cardLabel}>{t('featuresGrid.kenBurns.label')}</Label>
               <Heading as="h3" serif className={styles.cardTitle}>
-                Ken Burns Effect
+                {t('featuresGrid.kenBurns.title')}
               </Heading>
               <Text muted>
-                Subtle, elegant pan and zoom animations bring your photos to life,
-                just like a professional documentary. Each photo gets its own
-                carefully crafted movement.
+                {t('featuresGrid.kenBurns.description')}
               </Text>
             </div>
             <div className={styles.cardMockup}>
@@ -82,13 +85,12 @@ export function FeaturesGrid() {
             variants={itemVariants}
           >
             <div className={styles.cardContent}>
-              <Label className={styles.cardLabel}>Intelligent</Label>
+              <Label className={styles.cardLabel}>{t('featuresGrid.faceDetection.label')}</Label>
               <Heading as="h3" serif className={styles.cardTitle}>
-                Smart Face Detection
+                {t('featuresGrid.faceDetection.title')}
               </Heading>
               <Text muted>
-                Advanced AI detects faces in your photos and ensures they're always
-                perfectly framed, even during pan and zoom animations.
+                {t('featuresGrid.faceDetection.description')}
               </Text>
             </div>
             <div className={styles.cardMockup}>
@@ -109,21 +111,20 @@ export function FeaturesGrid() {
           >
             <div className={styles.nightModeContent}>
               <div className={styles.nightModeText}>
-                <Label className={styles.cardLabel}>Thoughtful</Label>
+                <Label className={styles.cardLabel}>{t('featuresGrid.nightMode.label')}</Label>
                 <Heading as="h3" serif className={styles.cardTitle}>
-                  Night Mode
+                  {t('featuresGrid.nightMode.title')}
                 </Heading>
                 <Text>
-                  Enable Night Mode to dim your display after dark. Perfect for
-                  bedrooms and living spaces where a bright screen would be distracting.
+                  {t('featuresGrid.nightMode.description')}
                 </Text>
               </div>
               <div className={styles.nightModeSlider}>
                 <ImageComparisonSlider
                   beforeImage={normalModeImage}
                   afterImage={darkModeImage}
-                  beforeLabel="Normal"
-                  afterLabel="Night"
+                  beforeLabel={t('featuresGrid.nightMode.sliderBefore')}
+                  afterLabel={t('featuresGrid.nightMode.sliderAfter')}
                   initialPosition={50}
                 />
               </div>
@@ -135,13 +136,12 @@ export function FeaturesGrid() {
             className={`${styles.card} ${styles.cardSmall}`}
             variants={itemVariants}
           >
-            <Label className={styles.cardLabel}>Private</Label>
+            <Label className={styles.cardLabel}>{t('featuresGrid.privacy.label')}</Label>
             <Heading as="h3" serif className={styles.cardTitle}>
-              Your Photos Never Leave
+              {t('featuresGrid.privacy.title')}
             </Heading>
             <Text muted>
-              All features run entirely on your device. We never see, access,
-              or store your photos.
+              {t('featuresGrid.privacy.description')}
             </Text>
           </motion.article>
 
@@ -151,20 +151,19 @@ export function FeaturesGrid() {
             variants={itemVariants}
           >
             <div className={styles.cardContent}>
-              <Label className={styles.cardLabel}>Live Data</Label>
+              <Label className={styles.cardLabel}>{t('featuresGrid.weather.label')}</Label>
               <Heading as="h3" serif className={styles.cardTitle}>
-                Weather Overlay
+                {t('featuresGrid.weather.title')}
               </Heading>
               <Text muted>
-                Optional weather widget displays current conditions, so your
-                photo frame doubles as an at-a-glance weather station.
+                {t('featuresGrid.weather.description')}
               </Text>
             </div>
             <div className={styles.weatherWidget}>
-              <span className={styles.weatherWidgetIcon}>☀️</span>
+              <span className={styles.weatherWidgetIcon}>{t('featuresGrid.weather.demo.icon')}</span>
               <div className={styles.weatherWidgetInfo}>
-                <span className={styles.weatherWidgetTemp}>72°</span>
-                <span className={styles.weatherWidgetCondition}>Clear</span>
+                <span className={styles.weatherWidgetTemp}>{t('featuresGrid.weather.demo.temp')}</span>
+                <span className={styles.weatherWidgetCondition}>{t('featuresGrid.weather.demo.condition')}</span>
               </div>
             </div>
             <AccentSquare

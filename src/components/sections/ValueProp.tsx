@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
+import { Trans } from 'react-i18next';
 import { Text, SerifItalic } from '../ui';
 import { AccentDot } from '../ui';
 import styles from './ValueProp.module.css';
 
 export function ValueProp() {
+
   return (
     <section className={styles.section}>
       <motion.div
@@ -17,10 +19,11 @@ export function ValueProp() {
           <AccentDot color="gold" size={10} />
         </div>
         <Text size="xl" className={styles.text}>
-          Transform your iPad into a stunning digital photo frame with{' '}
-          <SerifItalic>cinematic</SerifItalic> Ken Burns effects and intelligent
-          face detection that keeps your loved ones perfectly framed. No subscriptions,
-          no cloud dependency—just your photos, beautifully displayed.
+          <Trans
+            i18nKey="valueProp.description"
+            ns="home"
+            components={{ cinematic: <SerifItalic>cinematic</SerifItalic> }}
+          />
         </Text>
       </motion.div>
     </section>

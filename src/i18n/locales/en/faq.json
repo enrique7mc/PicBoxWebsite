@@ -1,0 +1,23 @@
+{
+  "page": {
+    "title": "Frequently Asked Questions",
+    "intro": "Everything you need to know about turning your iPad into the perfect digital photo frame."
+  },
+  "sections": {
+    "gettingStarted": "Getting Started",
+    "automation": "Automation & Shortcuts",
+    "privacy": "Privacy & Security",
+    "compatibility": "Compatibility",
+    "features": "Features",
+    "performance": "Performance & Battery",
+    "purchase": "Purchase & Support",
+    "photos": "Photos & Albums",
+    "troubleshooting": "Troubleshooting",
+    "tips": "Tips & Tricks",
+    "stillQuestions": "Still Have Questions?"
+  },
+  "contact": {
+    "text": "We'd love to hear from you. Reach out at",
+    "email": "support@picbox.app"
+  }
+}

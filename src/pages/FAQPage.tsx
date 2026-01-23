@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { PageWrapper } from "../components/layout";
 import { FAQItem } from "../components/ui";
 import styles from "./FAQPage.module.css";
@@ -188,19 +189,20 @@ const tips = [
 ];
 
 export function FAQPage() {
+  const { t } = useTranslation('faq');
+
   return (
     <PageWrapper footerVariant="minimal">
       <article className={styles.container}>
         <header className={styles.header}>
-          <h1 className={styles.title}>Frequently Asked Questions</h1>
+          <h1 className={styles.title}>{t('page.title')}</h1>
           <p className={styles.intro}>
-            Everything you need to know about turning your iPad into the perfect
-            digital photo frame.
+            {t('page.intro')}
           </p>
         </header>
 
         <section className={styles.section}>
-          <h2 className={styles.categoryTitle}>Getting Started</h2>
+          <h2 className={styles.categoryTitle}>{t('sections.gettingStarted')}</h2>
           <div className={styles.faqList}>
             {faqData.gettingStarted.map((item) => (
               <FAQItem
@@ -213,7 +215,7 @@ export function FAQPage() {
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.categoryTitle}>Automation & Shortcuts</h2>
+          <h2 className={styles.categoryTitle}>{t('sections.automation')}</h2>
           <div className={styles.faqList}>
             {faqData.automation.map((item) => (
               <FAQItem
@@ -226,7 +228,7 @@ export function FAQPage() {
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.categoryTitle}>Privacy & Security</h2>
+          <h2 className={styles.categoryTitle}>{t('sections.privacy')}</h2>
           <div className={styles.faqList}>
             {faqData.privacy.map((item) => (
               <FAQItem
@@ -239,7 +241,7 @@ export function FAQPage() {
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.categoryTitle}>Compatibility</h2>
+          <h2 className={styles.categoryTitle}>{t('sections.compatibility')}</h2>
           <div className={styles.faqList}>
             {faqData.compatibility.map((item) => (
               <FAQItem
@@ -252,7 +254,7 @@ export function FAQPage() {
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.categoryTitle}>Features</h2>
+          <h2 className={styles.categoryTitle}>{t('sections.features')}</h2>
           <div className={styles.faqList}>
             {faqData.features.map((item) => (
               <FAQItem
@@ -265,7 +267,7 @@ export function FAQPage() {
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.categoryTitle}>Performance & Battery</h2>
+          <h2 className={styles.categoryTitle}>{t('sections.performance')}</h2>
           <div className={styles.faqList}>
             {faqData.performance.map((item) => (
               <FAQItem
@@ -278,7 +280,7 @@ export function FAQPage() {
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.categoryTitle}>Purchase & Support</h2>
+          <h2 className={styles.categoryTitle}>{t('sections.purchase')}</h2>
           <div className={styles.faqList}>
             {faqData.purchase.map((item) => (
               <FAQItem
@@ -291,7 +293,7 @@ export function FAQPage() {
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.categoryTitle}>Photos & Albums</h2>
+          <h2 className={styles.categoryTitle}>{t('sections.photos')}</h2>
           <div className={styles.faqList}>
             {faqData.photos.map((item) => (
               <FAQItem
@@ -304,7 +306,7 @@ export function FAQPage() {
         </section>
 
         <section className={`${styles.section} ${styles.specialSection}`}>
-          <h2 className={styles.categoryTitle}>Troubleshooting</h2>
+          <h2 className={styles.categoryTitle}>{t('sections.troubleshooting')}</h2>
           <p className={styles.sectionIntro}>
             Having issues? Check these common solutions.
           </p>
@@ -320,7 +322,7 @@ export function FAQPage() {
         </section>
 
         <section className={`${styles.section} ${styles.specialSection}`}>
-          <h2 className={styles.categoryTitle}>Tips & Tricks</h2>
+          <h2 className={styles.categoryTitle}>{t('sections.tips')}</h2>
           <p className={styles.sectionIntro}>
             Get more out of your PicBox experience.
           </p>
@@ -336,13 +338,12 @@ export function FAQPage() {
         </section>
 
         <section className={styles.contact}>
-          <h2 className={styles.categoryTitle}>Still Have Questions?</h2>
+          <h2 className={styles.categoryTitle}>{t('sections.stillQuestions')}</h2>
           <p>
-            We're here to help. Reach out to us at{" "}
+            {t('contact.text')}{" "}
             <a href="mailto:support@picbox.app" className={styles.link}>
-              support@picbox.app
-            </a>{" "}
-            and we'll get back to you.
+              {t('contact.email')}
+            </a>.
           </p>
         </section>
       </article>

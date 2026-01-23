@@ -5,3 +5,4 @@ export * from './AccentSquare';
 export * from './MockupPlaceholder';
 export * from './ImageComparisonSlider';
 export * from './FAQItem';
+export * from './LanguageSwitcher';
