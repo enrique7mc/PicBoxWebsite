@@ -1,11 +1,10 @@
 import { motion } from 'framer-motion';
-import { useTranslation, Trans } from 'react-i18next';
+import { Trans } from 'react-i18next';
 import { Text, SerifItalic } from '../ui';
 import { AccentDot } from '../ui';
 import styles from './ValueProp.module.css';
 
 export function ValueProp() {
-  const { t } = useTranslation('home');
 
   return (
     <section className={styles.section}>
@@ -23,7 +22,7 @@ export function ValueProp() {
           <Trans
             i18nKey="valueProp.description"
             ns="home"
-            components={{ cinematic: <SerifItalic /> }}
+            components={{ cinematic: <SerifItalic>cinematic</SerifItalic> }}
           />
         </Text>
       </motion.div>

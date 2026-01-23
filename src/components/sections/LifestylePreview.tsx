@@ -51,13 +51,13 @@ export function LifestylePreview({ variant = 'default' }: LifestylePreviewProps)
               <Trans
                 i18nKey="lifestylePreview.waitlist.heading"
                 ns="home"
-                components={{ your: <SerifItalic /> }}
+                components={{ your: <SerifItalic>your</SerifItalic> }}
               />
             ) : (
               <Trans
                 i18nKey="lifestylePreview.default.heading"
                 ns="home"
-                components={{ everyday: <SerifItalic /> }}
+                components={{ everyday: <SerifItalic>everyday</SerifItalic> }}
               />
             )}
           </Heading>
