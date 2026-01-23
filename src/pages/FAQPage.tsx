@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { PageWrapper } from "../components/layout";
+import { SEO } from '../components/SEO';
 import { FAQItem } from "../components/ui";
 import styles from "./FAQPage.module.css";
 
@@ -191,8 +192,32 @@ const tips = [
 export function FAQPage() {
   const { t } = useTranslation('faq');
 
+  // FAQ structured data for rich search results
+  const faqStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      ...faqData.gettingStarted,
+      ...faqData.automation,
+      ...faqData.privacy,
+      ...faqData.features,
+    ].slice(0, 10).map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <PageWrapper footerVariant="minimal">
+      <SEO
+        title={t('seo.title', 'Frequently Asked Questions')}
+        description={t('seo.description', 'Find answers to common questions about PicBox. Learn about setup, features, automation, privacy, and troubleshooting for your digital photo frame.')}
+        structuredData={faqStructuredData}
+      />
       <article className={styles.container}>
         <header className={styles.header}>
           <h1 className={styles.title}>{t('page.title')}</h1>

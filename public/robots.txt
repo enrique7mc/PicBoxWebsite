@@ -1,0 +1,11 @@
+# robots.txt for PicBox Website
+# https://picbox.app
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://picbox.app/sitemap.xml
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1

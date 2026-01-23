@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { PageWrapper } from '../components/layout';
+import { SEO } from '../components/SEO';
 import styles from './PrivacyPage.module.css';
 
 export function PrivacyPage() {
@@ -7,6 +8,10 @@ export function PrivacyPage() {
 
   return (
     <PageWrapper footerVariant="minimal">
+      <SEO
+        title={t('seo.title', 'Privacy Policy')}
+        description={t('seo.description', 'PicBox Privacy Policy. Learn how we protect your data. Your photos never leave your device - all processing happens locally on your iPad.')}
+      />
       <article className={styles.container}>
         <header className={styles.header}>
           <h1 className={styles.title}>{t('page.title')}</h1>

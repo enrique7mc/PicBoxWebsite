@@ -1,4 +1,14 @@
 {
+  "seo": {
+    "waitlist": {
+      "title": "Únete a la Lista de Espera",
+      "description": "Sé el primero en saber cuando PicBox se lance. Transforma tu iPad en un impresionante marco de fotos digital con efectos Ken Burns cinematográficos y detección inteligente de rostros."
+    },
+    "showcase": {
+      "title": "App de Marco de Fotos Digital",
+      "description": "PicBox transforma tu iPad en un hermoso marco de fotos digital. Con efectos Ken Burns cinematográficos, detección inteligente de rostros e integración perfecta con tu biblioteca de fotos."
+    }
+  },
   "brand": {
     "name": "PicBox",
     "tagline": "El marco de fotos que tu iPad estaba destinado a ser."

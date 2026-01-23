@@ -1,4 +1,14 @@
 {
+  "seo": {
+    "waitlist": {
+      "title": "Join the Waitlist",
+      "description": "Be the first to know when PicBox launches. Transform your iPad into a stunning digital photo frame with cinematic Ken Burns effects and smart face detection."
+    },
+    "showcase": {
+      "title": "Digital Photo Frame App",
+      "description": "PicBox transforms your iPad into a beautiful digital photo frame. Features cinematic Ken Burns effects, smart face detection, and seamless photo library integration."
+    }
+  },
   "brand": {
     "name": "PicBox",
     "tagline": "The photo frame your iPad was meant to be."
