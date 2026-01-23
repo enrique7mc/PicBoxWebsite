@@ -31,8 +31,9 @@ PicBox Website is a React 19 + TypeScript landing site for PicBox, a digital pho
 - CSS Variables in `/src/styles/globals.css` for design tokens
 
 **Design System (in globals.css):**
-- Fonts: Instrument Serif (headings), Work Sans (body)
-- Colors: Warm gold (#C4A77D), Sage green (#8B9D77), Dusty rose (#C9A9A6)
+- **Fonts:** Instrument Serif (headings), Work Sans (body)
+- **Main Colors:** Background (#FAF9F7), Text (#1A1A1A)
+- **Accent Colors:** Warm gold (#C4A77D), Sage green (#8B9D77), Dusty rose (#C9A9A6)
 - Uses responsive clamp() values for typography and spacing
 
 ## Assets
