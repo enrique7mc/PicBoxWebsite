@@ -2,10 +2,10 @@
   "waitlistHero": {
     "badge": "Próximamente",
     "heading": "Próximamente",
-    "tagline": "EL MARCO DE FOTOS QUE TU iPAD ESTABA DESTINADO A SER"
+    "tagline": "EL MARCO DE FOTOS IDEAL PARA TU iPad"
   },
   "showcaseHero": {
-    "heading": "Tus recuerdos, bellamente mostrados",
+    "heading": "Dale vida a tus recuerdos",
     "subtitle": "Transforma tu iPad en un impresionante marco de fotos digital con efectos cinematográficos y encuadre inteligente."
   },
   "valueProp": {
@@ -19,6 +19,7 @@
     "buttonLoading": "Uniéndose...",
     "success": "¡Estás en la lista!",
     "position": "Tu posición",
+    "noSpam": "Sin spam, nunca. Solo novedades del lanzamiento.",
     "validation": {
       "required": "El correo electrónico es requerido",
       "invalid": "Dirección de correo inválida"
@@ -33,7 +34,7 @@
     "features": {
       "kenBurns": {
         "title": "Efecto Ken Burns",
-        "description": "Un sutil paneo y zoom cinematográfico da vida a tus fotos.",
+        "description": "Un sutil movimiento y zoom cinematográfico da vida a tus fotos.",
         "label": "Demo Ken Burns"
       },
       "autoStart": {
@@ -43,7 +44,7 @@
       },
       "faceDetection": {
         "title": "Detección Inteligente de Rostros",
-        "description": "El encuadre inteligente mantiene los rostros perfectamente centrados.",
+        "description": "El encuadre inteligente mantiene los rostros dentro de cuadro.",
         "label": "Detección de Rostros"
       }
     },
@@ -59,7 +60,7 @@
     "kenBurns": {
       "label": "Cinematográfico",
       "title": "Efecto Ken Burns",
-      "description": "Un sutil paneo y zoom da vida a tus fotos con un elegante movimiento estilo documental que cautiva sin distraer."
+      "description": "Un sutil balanceo y zoom da vida a tus fotos con un elegante movimiento estilo documental que cautiva sin distraer."
     },
     "faceDetection": {
       "label": "Inteligente",
@@ -69,19 +70,19 @@
     "nightMode": {
       "label": "Considerado",
       "title": "Modo Nocturno",
-      "description": "Atenúa y calienta automáticamente la pantalla por la noche, protegiendo tu sueño mientras mantiene los recuerdos visibles.",
+      "description": "Atenúa y da tinte automáticamente la pantalla por la noche, protegiendo tu sueño mientras mantiene los recuerdos visibles.",
       "sliderBefore": "Normal",
       "sliderAfter": "Nocturno"
     },
     "privacy": {
       "label": "Privado",
-      "title": "Tus Fotos Nunca Salen",
+      "title": "Completamente sin conexión",
       "description": "Todo funciona localmente en tu iPad. Sin subidas a la nube, sin cuentas, sin rastreo. Tus recuerdos siguen siendo tuyos."
     },
     "weather": {
       "label": "Datos en Vivo",
-      "title": "Superposición del Clima",
-      "description": "Visualización opcional del clima que muestra las condiciones actuales de un vistazo, bellamente integrada con tus fotos.",
+      "title": "Indicador del Clima",
+      "description": "Visualización opcional del clima que muestra las condiciones actuales de un vistazo, elegantement integrada con tus fotos.",
       "demo": {
         "icon": "☀️",
         "temp": "22°",
@@ -122,9 +123,9 @@
     }
   },
   "testimonial": {
-    "quote": "Por fin, una app de marco de fotos que se siente como si estuviera hecha por personas que realmente se preocupan por el diseño. Mi viejo iPad ahora vive en mi escritorio y no podría estar más feliz.",
-    "author": "Sarah M.",
-    "role": "Beta Tester Temprana"
+    "quote": "Por fin, una app de marco de fotos que se siente como si estuviera hecha por personas que realmente se preocupan por el diseño. Mi iPad ahora vive en mi escritorio y no podría estar más feliz.",
+    "author": "Daniel M.",
+    "role": "Usuario Beta"
   },
   "finalCta": {
     "heading": "¿Listo para transformar tu iPad?",

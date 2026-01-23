@@ -2,10 +2,10 @@
   "waitlistHero": {
     "badge": "Coming Soon",
     "heading": "Coming soon",
-    "tagline": "THE PHOTO FRAME YOUR iPAD WAS MEANT TO BE"
+    "tagline": "THE PHOTO FRAME YOUR iPad WAS MEANT TO BE"
   },
   "showcaseHero": {
-    "heading": "Your memories, beautifully displayed",
+    "heading": "Bring your memories to life",
     "subtitle": "Transform your iPad into a stunning digital photo frame with cinematic effects and intelligent framing."
   },
   "valueProp": {
@@ -19,6 +19,7 @@
     "buttonLoading": "Joining...",
     "success": "You're on the list!",
     "position": "Your position",
+    "noSpam": "No spam, ever. Just launch updates.",
     "validation": {
       "required": "Email is required",
       "invalid": "Invalid email address"
@@ -43,7 +44,7 @@
       },
       "faceDetection": {
         "title": "Smart Face Detection",
-        "description": "Intelligent framing keeps faces perfectly centered.",
+        "description": "Intelligent framing keeps faces in frame.",
         "label": "Face Detection"
       }
     },
@@ -75,13 +76,13 @@
     },
     "privacy": {
       "label": "Private",
-      "title": "Your Photos Never Leave",
+      "title": "Truly Offline",
       "description": "Everything runs locally on your iPad. No cloud uploads, no accounts, no tracking. Your memories stay yours."
     },
     "weather": {
       "label": "Live Data",
       "title": "Weather Overlay",
-      "description": "Optional weather display shows current conditions at a glance, beautifully integrated with your photos.",
+      "description": "Optional weather display shows current conditions at a glance, elegantly integrated with your photos.",
       "demo": {
         "icon": "☀️",
         "temp": "72°",
@@ -122,7 +123,7 @@
     }
   },
   "testimonial": {
-    "quote": "Finally, a photo frame app that feels like it was made by people who actually care about design. My old iPad now lives on my desk and I couldn't be happier.",
+    "quote": "Finally, a photo frame app that feels like it was made by people who actually care about design. My iPad now lives on my desk and I couldn't be happier.",
     "author": "Sarah M.",
     "role": "Early Beta Tester"
   },

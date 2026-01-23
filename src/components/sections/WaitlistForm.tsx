@@ -128,6 +128,9 @@ export function WaitlistForm() {
                     {apiError}
                   </Text>
                 )}
+                <Text size="sm" muted className={styles.noSpam}>
+                  {t('waitlistForm.noSpam')}
+                </Text>
               </motion.form>
             ) : (
               <motion.div
