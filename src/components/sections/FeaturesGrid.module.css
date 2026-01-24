@@ -60,6 +60,18 @@
   max-width: 200px;
 }
 
+/* Override mockup size on mobile to match FeatureTeaser */
+.mockup {
+  width: 100%;
+  max-width: none;
+}
+
+@media (max-width: 968px) {
+  .cardMockup > * {
+    max-width: none;
+  }
+}
+
 .accentDecor {
   position: absolute;
   bottom: var(--space-md);

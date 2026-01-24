@@ -66,7 +66,7 @@ export function FeaturesGrid() {
               </Text>
             </div>
             <div className={styles.cardMockup}>
-              <MockupPlaceholder variant="ipad-small" label="Ken Burns Demo" image={kenBurnsImage} />
+              <MockupPlaceholder variant="ipad-small" label="Ken Burns Demo" image={kenBurnsImage} className={styles.mockup} />
             </div>
             <AccentSquare
               color="gold"
@@ -92,7 +92,7 @@ export function FeaturesGrid() {
               </Text>
             </div>
             <div className={styles.cardMockup}>
-              <MockupPlaceholder variant="ipad-small" label="Face Detection" image={faceDetectionImage} />
+              <MockupPlaceholder variant="ipad-small" label="Face Detection" image={faceDetectionImage} className={styles.mockup} />
             </div>
             <AccentSquare
               color="sage"
