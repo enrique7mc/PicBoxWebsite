@@ -58,6 +58,16 @@ Configured for Vercel with SPA rewrites and static asset caching (see `vercel.js
 
 - `vercel --prod` - Deploy to production via Vercel CLI
 
+## Chrome DevTools MCP
+
+When using the Chrome DevTools MCP to take screenshots, avoid full-page screenshots on long pages. The API has a maximum image dimension of 8000 pixels, and exceeding this will cause an error:
+
+```
+invalid_request_error: At least one of the image dimensions exceed max allowed size: 8000 pixels
+```
+
+Use viewport screenshots instead, or resize the page to a smaller dimension before capturing.
+
 ## Next Steps
 
 ### Waitlist Setup
