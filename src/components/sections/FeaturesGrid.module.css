@@ -32,10 +32,9 @@
 
 /* Large cards */
 .cardLarge {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+  flex-direction: column;
   gap: var(--space-lg);
-  align-items: center;
 }
 
 .cardContent {
@@ -53,12 +52,12 @@
 }
 
 .cardMockup {
-  flex-shrink: 0;
+  align-self: center;
 }
 
-.cardMockup > * {
-  max-width: 200px;
-}
+/* .cardMockup > * {
+  max-width: 280px;
+} */
 
 .accentDecor {
   position: absolute;
@@ -69,11 +68,7 @@
 /* Night Mode accent card (full width) */
 .cardNightMode {
   grid-column: span 2;
-  background: linear-gradient(
-    135deg,
-    #2a2d3a 0%,
-    #1a1c24 100%
-  );
+  background: linear-gradient(135deg, #2a2d3a 0%, #1a1c24 100%);
   color: var(--color-warm-white);
 }
 
@@ -111,17 +106,21 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
-/* Weather widget for large card */
+/* Horizontal card (text left, content right) */
+.cardHorizontal {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+/* Weather widget */
 .weatherWidget {
   display: flex;
   align-items: center;
   gap: var(--space-md);
   padding: var(--space-lg) var(--space-xl);
-  background: linear-gradient(
-    135deg,
-    var(--color-accent-2) 0%,
-    #7a8e6a 100%
-  );
+  background: linear-gradient(135deg, var(--color-accent-2) 0%, #7a8e6a 100%);
   border-radius: var(--radius-md);
   color: var(--color-bg);
 }
@@ -171,11 +170,11 @@
 }
 
 @media (max-width: 968px) {
-  .cardLarge {
+  .cardHorizontal {
     grid-template-columns: 1fr;
   }
 
-  .cardMockup {
+  .cardHorizontal .weatherWidget {
     justify-self: center;
   }
 
