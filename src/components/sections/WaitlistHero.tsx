@@ -7,6 +7,7 @@ import heroImage1 from '../../assets/screenshots/hero.jpg';
 import heroImage2 from '../../assets/screenshots/hero-2.jpg';
 import heroImage3 from '../../assets/screenshots/hero-3.jpg';
 import styles from './WaitlistHero.module.css';
+import mockupStyles from '../ui/MockupPlaceholder.module.css';
 
 const heroImages = [heroImage1, heroImage2, heroImage3];
 
@@ -78,7 +79,8 @@ export function WaitlistHero() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 1 }}
-                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+                className={mockupStyles.image}
+                style={{ position: 'absolute', inset: 0 }}
               />
             </AnimatePresence>
           </MockupPlaceholder>
