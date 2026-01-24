@@ -102,6 +102,7 @@
   .imageWrapper {
     max-width: 500px;
     margin: 0 auto;
+    padding: 0 var(--space-lg);
   }
 
   .content {
