@@ -38,7 +38,9 @@
   "cta": {
     "downloadAppStore": "Descargar en App Store",
     "oneTimePurchase": "Compra única",
-    "price": "$4.99"
+    "price": "$4.99 USD",
+    "earlyAdopter": "Gratis para siempre para primeros usuarios",
+    "earlyAdopterPrice": "$0.00"
   },
   "accessibility": {
     "mainAppScreenshot": "Captura de pantalla principal de la app",

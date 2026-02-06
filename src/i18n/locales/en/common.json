@@ -38,7 +38,9 @@
   "cta": {
     "downloadAppStore": "Download on App Store",
     "oneTimePurchase": "One-time purchase",
-    "price": "$4.99"
+    "price": "$4.99",
+    "earlyAdopter": "Free forever for early adopters",
+    "earlyAdopterPrice": "$0.00"
   },
   "accessibility": {
     "mainAppScreenshot": "Main App Screenshot",

@@ -1,14 +1,9 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from '../ui';
 import styles from './Header.module.css';
 
 export function Header() {
-  const { t } = useTranslation('common');
-  const location = useLocation();
-  const isShowcase = location.pathname === '/app';
-
   return (
     <motion.header
       className={styles.header}
@@ -22,20 +17,6 @@ export function Header() {
         </Link>
 
         <div className={styles.navSection}>
-          <nav className={styles.nav}>
-            <Link
-              to="/"
-              className={`${styles.navLink} ${!isShowcase ? styles.active : ''}`}
-            >
-              {t('nav.waitlist')}
-            </Link>
-            <Link
-              to="/app"
-              className={`${styles.navLink} ${isShowcase ? styles.active : ''}`}
-            >
-              {t('nav.app')}
-            </Link>
-          </nav>
           <LanguageSwitcher />
         </div>
       </div>

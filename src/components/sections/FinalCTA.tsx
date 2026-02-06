@@ -5,6 +5,8 @@ import { LinkButton } from '../ui';
 import { AccentSquare, AccentDot } from '../ui';
 import styles from './FinalCTA.module.css';
 
+const isEarlyAdopter = import.meta.env.VITE_EARLY_ADOPTER === 'true';
+
 export function FinalCTA() {
   const { t } = useTranslation('home');
 
@@ -47,7 +49,8 @@ export function FinalCTA() {
 
         <div className={styles.actions}>
           <LinkButton
-            href="#"
+            href="https://apps.apple.com/mx/app/picbox-smart-photo-frame/id6758165208"
+            external
             variant="primary"
             size="lg"
             className={styles.appStoreBtn}
@@ -64,8 +67,8 @@ export function FinalCTA() {
           </LinkButton>
 
           <div className={styles.price}>
-            <Label>{t('cta.oneTimePurchase', { ns: 'common' })}</Label>
-            <span className={styles.priceAmount}>$4.99</span>
+            <Label>{t(isEarlyAdopter ? 'cta.earlyAdopter' : 'cta.oneTimePurchase', { ns: 'common' })}</Label>
+            <span className={styles.priceAmount}>{isEarlyAdopter ? t('cta.earlyAdopterPrice', { ns: 'common' }) : '$4.99'}</span>
           </div>
         </div>
 

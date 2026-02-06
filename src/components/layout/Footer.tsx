@@ -54,8 +54,7 @@ export function Footer({ variant = 'minimal' }: FooterProps) {
           <div className={styles.linksColumn}>
             <h4 className={styles.columnTitle}>{t('footer.navigate.title')}</h4>
             <nav className={styles.linksList}>
-              <Link to="/" className={styles.link}>{t('footer.navigate.waitlist')}</Link>
-              <Link to="/app" className={styles.link}>{t('footer.navigate.app')}</Link>
+              <Link to="/" className={styles.link}>{t('footer.navigate.app')}</Link>
             </nav>
           </div>
 

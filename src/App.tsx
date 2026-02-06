@@ -2,7 +2,6 @@ import { Routes, Route, useLocation, useParams } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
-import { WaitlistPage } from './pages/WaitlistPage';
 import { ShowcasePage } from './pages/ShowcasePage';
 import { PrivacyPage } from './pages/PrivacyPage';
 import { FAQPage } from './pages/FAQPage';
@@ -29,8 +28,7 @@ function App() {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         {/* Default English routes */}
-        <Route path="/" element={<WaitlistPage />} />
-        <Route path="/app" element={<ShowcasePage />} />
+        <Route path="/" element={<ShowcasePage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/faq" element={<FAQPage />} />
 
@@ -38,8 +36,7 @@ function App() {
         <Route path="/:lang/*" element={
           <LanguageWrapper>
             <Routes>
-              <Route path="/" element={<WaitlistPage />} />
-              <Route path="/app" element={<ShowcasePage />} />
+              <Route path="/" element={<ShowcasePage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/faq" element={<FAQPage />} />
             </Routes>
