@@ -49,7 +49,7 @@ export function FinalCTA() {
 
         <div className={styles.actions}>
           <LinkButton
-            href="https://apps.apple.com/mx/app/picbox-smart-photo-frame/id6758165208"
+            href={t('cta.appStoreUrl', { ns: 'common' })}
             external
             variant="primary"
             size="lg"
