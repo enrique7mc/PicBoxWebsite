@@ -43,12 +43,12 @@ const faqData = {
     {
       question: "Do my photos leave my device?",
       answer:
-        "Never. Your photos stay entirely on your iPad. PicBox processes everything locally and never uploads, transmits, or stores your photos on any external servers.",
+        "Never. Your photos stay entirely on your device. PicBox processes everything locally and never uploads, transmits, or stores your photos on any external servers.",
     },
     {
       question: "Is face detection done on-device?",
       answer:
-        "Yes, all face detection processing happens directly on your iPad using Apple's on-device Vision framework. No facial data is ever sent anywhere.",
+        "Yes, all face detection processing happens directly on your device using Apple's on-device Vision framework. No facial data is ever sent anywhere.",
     },
     {
       question: "What data does the weather feature use?",
@@ -58,9 +58,14 @@ const faqData = {
   ],
   compatibility: [
     {
+      question: "Does PicBox work on Apple TV?",
+      answer:
+        "Yes! PicBox is available on Apple TV. Browse your photo albums, enjoy cinematic Ken Burns effects, and control everything with the Siri Remote. It requires tvOS 17 or later.",
+    },
+    {
       question: "Does PicBox work on iPhone?",
       answer:
-        "Yes, PicBox works on iPhone. However, for the best photo frame experience, we recommend using an iPad. The larger screen makes iPads ideal for displaying your memories.",
+        "Yes, PicBox works on iPhone. However, for the best photo frame experience, we recommend using an iPad or Apple TV. The larger screens are ideal for displaying your memories.",
     },
     {
       question: "Which iPad models are supported?",
@@ -68,9 +73,19 @@ const faqData = {
         "PicBox supports all iPads running iPadOS 17 or later. This includes iPad Pro, iPad Air, iPad mini, and standard iPad models from recent years.",
     },
     {
+      question: "Which Apple TV models are supported?",
+      answer:
+        "PicBox supports Apple TV HD and Apple TV 4K running tvOS 17 or later. For the best experience with smooth Ken Burns transitions, we recommend Apple TV 4K.",
+    },
+    {
       question: "Does it work on older iPads?",
       answer:
         "If your iPad runs iPadOS 17, PicBox will work. Older iPads that cannot update to iPadOS 17 are not supported due to required system features.",
+    },
+    {
+      question: "Is it a universal purchase?",
+      answer:
+        "Yes, buying PicBox once gives you access on iPad, iPhone, and Apple TV. No need to purchase separately for each device.",
     },
   ],
   features: [
@@ -112,6 +127,11 @@ const faqData = {
       question: "Is there a subscription?",
       answer:
         "No subscriptions. PicBox is a one-time purchase that gives you full access to all features forever, including future updates.",
+    },
+    {
+      question: "What happens to early subscribers if the price changes?",
+      answer:
+        "Early subscribers retain full access to PicBox on the devices where they originally downloaded the app. Your purchase is yours to keep, regardless of any future pricing changes.",
     },
     {
       question: "What's included in the purchase?",
@@ -330,7 +350,7 @@ export function FAQPage() {
           </div>
         </section>
 
-        <section className={`${styles.section} ${styles.specialSection}`}>
+        <section className={`${styles.section}`}>
           <h2 className={styles.categoryTitle}>{t('sections.troubleshooting')}</h2>
           <p className={styles.sectionIntro}>
             Having issues? Check these common solutions.
@@ -346,7 +366,7 @@ export function FAQPage() {
           </div>
         </section>
 
-        <section className={`${styles.section} ${styles.specialSection}`}>
+        <section className={`${styles.section}`}>
           <h2 className={styles.categoryTitle}>{t('sections.tips')}</h2>
           <p className={styles.sectionIntro}>
             Get more out of your PicBox experience.

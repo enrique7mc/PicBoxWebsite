@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import styles from './MockupPlaceholder.module.css';
 
 interface MockupPlaceholderProps {
-  variant?: 'ipad' | 'ipad-small' | 'square';
+  variant?: 'ipad' | 'ipad-small' | 'square' | 'tv';
   rotate?: number;
   label?: string;
   image?: string;
@@ -45,6 +45,9 @@ export function MockupPlaceholder({
             <div className={styles.camera} />
           </div>
         </div>
+      )}
+      {variant === 'tv' && (
+        <div className={styles.tvStand} />
       )}
     </motion.div>
   );

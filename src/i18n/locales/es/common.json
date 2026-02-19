@@ -5,13 +5,13 @@
       "description": "Sé el primero en saber cuando PicBox se lance. Transforma tu iPad en un impresionante marco de fotos digital con efectos Ken Burns cinematográficos y detección inteligente de rostros."
     },
     "showcase": {
-      "title": "App de Marco de Fotos Digital",
-      "description": "PicBox transforma tu iPad en un hermoso marco de fotos digital. Con efectos Ken Burns cinematográficos, detección inteligente de rostros e integración perfecta con tu biblioteca de fotos."
+      "title": "Marco de Fotos Digital para iPad y Apple TV",
+      "description": "PicBox transforma tu iPad y Apple TV en hermosos marcos de fotos digitales. Con efectos Ken Burns cinematográficos, detección inteligente de rostros e integración perfecta con tu biblioteca de fotos."
     }
   },
   "brand": {
     "name": "PicBox",
-    "tagline": "El marco de fotos que tu iPad estaba destinado a ser."
+    "tagline": "El marco de fotos que tus pantallas estaban destinadas a ser."
   },
   "nav": {
     "waitlist": "Lista de espera",
@@ -21,7 +21,7 @@
     "privacy": "Política de privacidad"
   },
   "footer": {
-    "tagline": "El marco de fotos que tu iPad estaba destinado a ser.",
+    "tagline": "El marco de fotos que tus pantallas estaban destinadas a ser.",
     "navigate": {
       "title": "Navegar",
       "waitlist": "Lista de espera",
@@ -39,8 +39,8 @@
     "downloadAppStore": "Descargar en App Store",
     "appStoreUrl": "https://apps.apple.com/mx/app/picbox-smart-photo-frame/id6758165208",
     "oneTimePurchase": "Compra única",
-    "price": "$4.99 USD",
-    "earlyAdopter": "Gratis para siempre para primeros usuarios",
+    "price": "$99 MXN",
+    "earlyAdopter": "Sin suscripciones, nunca",
     "earlyAdopterPrice": "$0.00"
   },
   "accessibility": {

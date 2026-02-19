@@ -5,13 +5,13 @@
       "description": "Be the first to know when PicBox launches. Transform your iPad into a stunning digital photo frame with cinematic Ken Burns effects and smart face detection."
     },
     "showcase": {
-      "title": "Digital Photo Frame App",
-      "description": "PicBox transforms your iPad into a beautiful digital photo frame. Features cinematic Ken Burns effects, smart face detection, and seamless photo library integration."
+      "title": "Digital Photo Frame for iPad & Apple TV",
+      "description": "PicBox transforms your iPad and Apple TV into beautiful digital photo frames. Features cinematic Ken Burns effects, smart face detection, and seamless photo library integration."
     }
   },
   "brand": {
     "name": "PicBox",
-    "tagline": "The photo frame your iPad was meant to be."
+    "tagline": "The photo frame your screens were meant to be."
   },
   "nav": {
     "waitlist": "Waitlist",
@@ -21,7 +21,7 @@
     "privacy": "Privacy Policy"
   },
   "footer": {
-    "tagline": "The photo frame your iPad was meant to be.",
+    "tagline": "The photo frame your screens were meant to be.",
     "navigate": {
       "title": "Navigate",
       "waitlist": "Waitlist",
@@ -40,7 +40,7 @@
     "appStoreUrl": "https://apps.apple.com/app/picbox-smart-photo-frame/id6758165208",
     "oneTimePurchase": "One-time purchase",
     "price": "$4.99",
-    "earlyAdopter": "Free forever for early adopters",
+    "earlyAdopter": "No subscriptions ever",
     "earlyAdopterPrice": "$0.00"
   },
   "accessibility": {

@@ -6,7 +6,7 @@
   },
   "showcaseHero": {
     "heading": "Dale vida a tus recuerdos",
-    "subtitle": "Transforma tu iPad en un impresionante marco de fotos digital con efectos cinematográficos y encuadre inteligente."
+    "subtitle": "Transforma tu iPad y Apple TV en impresionantes marcos de fotos digitales con efectos cinematográficos y encuadre inteligente."
   },
   "valueProp": {
     "description": "Transforma tu iPad en un impresionante marco de fotos digital con efectos Ken Burns <cinematic>cinematográficos</cinematic> y detección inteligente de rostros que mantiene a tus seres queridos perfectamente encuadrados. Sin suscripciones, sin dependencia de la nube—solo tus fotos, bellamente mostradas."
@@ -77,7 +77,7 @@
     "privacy": {
       "label": "Privado",
       "title": "Completamente sin conexión",
-      "description": "Todo funciona localmente en tu iPad. Sin subidas a la nube, sin cuentas, sin rastreo. Tus recuerdos siguen siendo tuyos."
+      "description": "Todo funciona localmente en tu dispositivo. Sin subidas a la nube, sin cuentas, sin rastreo. Tus recuerdos siguen siendo tuyos."
     },
     "weather": {
       "label": "Datos en Vivo",
@@ -87,6 +87,25 @@
         "icon": "☀️",
         "temp": "22°",
         "condition": "Despejado"
+      }
+    }
+  },
+  "tvShowcase": {
+    "badge": "Nuevo — Apple TV",
+    "heading": "Ahora en tu pantalla grande",
+    "subtitle": "PicBox ya está disponible en Apple TV. Disfruta de tus recuerdos favoritos en la pantalla más grande de tu hogar con el control remoto Siri y todas las funciones que te encantan.",
+    "features": {
+      "siriRemote": {
+        "title": "Control remoto Siri",
+        "description": "Navega álbumes, reproduce y pausa, y explora fotos con el control remoto Siri."
+      },
+      "cinematic": {
+        "title": "Cinematográfico en pantalla grande",
+        "description": "Los efectos Ken Burns y las transiciones suaves se ven impresionantes a tamaño completo."
+      },
+      "ambient": {
+        "title": "Pantalla ambiental",
+        "description": "Convierte tu TV en un hermoso marco de fotos cuando no está en uso."
       }
     }
   },
@@ -101,9 +120,13 @@
     }
   },
   "useCases": {
-    "heading": "Perfecto para cada hogar",
+    "heading": "Perfecto para cada habitación",
     "subtitle": "Descubre cómo PicBox encaja en tu vida diaria.",
     "cases": {
+      "livingRoom": {
+        "title": "Pantalla grande en la sala",
+        "description": "Convierte tu Apple TV en una galería cinematográfica de fotos para toda la familia."
+      },
       "homeOffice": {
         "title": "Compañero de oficina en casa",
         "description": "Mantén los recuerdos familiares cerca mientras trabajas desde casa."
@@ -111,10 +134,6 @@
       "kitchen": {
         "title": "Pantalla para el mostrador de cocina",
         "description": "Ilumina tu cocina con fotos familiares rotativas."
-      },
-      "family": {
-        "title": "Exhibición de fotos familiares",
-        "description": "Convierte cualquier habitación en una galería de tus mejores momentos."
       },
       "nightstand": {
         "title": "Compañero de mesa de noche",
@@ -128,11 +147,12 @@
     "role": "Usuario Beta"
   },
   "finalCta": {
-    "heading": "¿Listo para transformar tu iPad?",
+    "heading": "¿Listo para transformar tus pantallas?",
     "features": {
       "noSubscription": "Sin suscripción requerida",
       "worksOffline": "Funciona sin conexión",
-      "privacyFirst": "Diseño que prioriza la privacidad"
+      "privacyFirst": "Diseño que prioriza la privacidad",
+      "multiDevice": "iPad y Apple TV"
     }
   }
 }

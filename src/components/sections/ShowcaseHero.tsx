@@ -70,7 +70,7 @@ export function ShowcaseHero() {
 
             <div className={styles.price}>
               <Label>{t(isEarlyAdopter ? 'cta.earlyAdopter' : 'cta.oneTimePurchase', { ns: 'common' })}</Label>
-              <span className={styles.priceAmount}>{isEarlyAdopter ? t('cta.earlyAdopterPrice', { ns: 'common' }) : '$4.99'}</span>
+              <span className={styles.priceAmount}>{isEarlyAdopter ? t('cta.earlyAdopterPrice', { ns: 'common' }) : t('cta.price', { ns: 'common' })}</span>
             </div>
           </div>
 
