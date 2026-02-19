@@ -28,7 +28,7 @@ export function FinalCTA() {
 
         <Heading as="h2" serif className={styles.title}>
           <Trans i18nKey="finalCta.heading" ns="home">
-            Ready to transform your <SerifItalic>iPad?</SerifItalic>
+            Ready to transform your <SerifItalic>screens?</SerifItalic>
           </Trans>
         </Heading>
 
@@ -44,6 +44,10 @@ export function FinalCTA() {
           <div className={styles.feature}>
             <AccentDot color="rose" size={8} />
             <Text size="sm">{t('finalCta.features.privacyFirst')}</Text>
+          </div>
+          <div className={styles.feature}>
+            <AccentDot color="gold" size={8} />
+            <Text size="sm">{t('finalCta.features.multiDevice')}</Text>
           </div>
         </div>
 

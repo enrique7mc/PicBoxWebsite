@@ -8,3 +8,4 @@ export * from './FeaturesGrid';
 export * from './UseCases';
 export * from './Testimonial';
 export * from './FinalCTA';
+export * from './TVShowcase';

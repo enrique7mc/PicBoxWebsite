@@ -4,6 +4,7 @@ import { SEO } from '../components/SEO';
 import {
   ShowcaseHero,
   FeaturesGrid,
+  TVShowcase,
   LifestylePreview,
   UseCases,
   Testimonial,
@@ -21,6 +22,7 @@ export function ShowcasePage() {
       />
       <ShowcaseHero />
       <FeaturesGrid />
+      <TVShowcase />
       <LifestylePreview />
       <UseCases />
       <Testimonial />

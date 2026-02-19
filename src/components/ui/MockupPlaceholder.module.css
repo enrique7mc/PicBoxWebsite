@@ -31,6 +31,15 @@
   border-radius: 12px;
 }
 
+.tv {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  padding: 8px;
+  border-radius: 6px;
+  padding-bottom: 28px;
+}
+
 .screen {
   position: relative;
   width: 100%;
@@ -99,4 +108,19 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.tvStand {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  height: 6px;
+  background: #3a3a3a;
+  border-radius: 0 0 4px 4px;
+}
+
+.tv .screen {
+  border-radius: 4px;
 }

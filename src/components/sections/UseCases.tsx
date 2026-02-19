@@ -29,16 +29,16 @@ export function UseCases() {
 
   const useCases = [
     {
+      title: t('useCases.cases.livingRoom.title'),
+      description: t('useCases.cases.livingRoom.description'),
+    },
+    {
       title: t('useCases.cases.homeOffice.title'),
       description: t('useCases.cases.homeOffice.description'),
     },
     {
       title: t('useCases.cases.kitchen.title'),
       description: t('useCases.cases.kitchen.description'),
-    },
-    {
-      title: t('useCases.cases.family.title'),
-      description: t('useCases.cases.family.description'),
     },
     {
       title: t('useCases.cases.nightstand.title'),
