@@ -124,3 +124,7 @@
 .tv .screen {
   border-radius: 4px;
 }
+
+.tv .image {
+  object-position: bottom;
+}

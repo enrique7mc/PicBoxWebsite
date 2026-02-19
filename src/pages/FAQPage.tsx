@@ -129,6 +129,11 @@ const faqData = {
         "No subscriptions. PicBox is a one-time purchase that gives you full access to all features forever, including future updates.",
     },
     {
+      question: "What happens to early subscribers if the price changes?",
+      answer:
+        "Early subscribers retain full access to PicBox on the devices where they originally downloaded the app. Your purchase is yours to keep, regardless of any future pricing changes.",
+    },
+    {
       question: "What's included in the purchase?",
       answer:
         "Everything. All features, all transitions, all customization options, and all future updates are included in the single purchase price.",
@@ -345,7 +350,7 @@ export function FAQPage() {
           </div>
         </section>
 
-        <section className={`${styles.section} ${styles.specialSection}`}>
+        <section className={`${styles.section}`}>
           <h2 className={styles.categoryTitle}>{t('sections.troubleshooting')}</h2>
           <p className={styles.sectionIntro}>
             Having issues? Check these common solutions.
@@ -361,7 +366,7 @@ export function FAQPage() {
           </div>
         </section>
 
-        <section className={`${styles.section} ${styles.specialSection}`}>
+        <section className={`${styles.section}`}>
           <h2 className={styles.categoryTitle}>{t('sections.tips')}</h2>
           <p className={styles.sectionIntro}>
             Get more out of your PicBox experience.

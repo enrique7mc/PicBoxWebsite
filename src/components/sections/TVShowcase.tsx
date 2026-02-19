@@ -3,7 +3,6 @@ import { useTranslation, Trans } from 'react-i18next';
 import { Heading, Text, Label, SerifItalic } from '../ui';
 import { MockupPlaceholder, AccentSquare } from '../ui';
 import heroImage from '../../assets/screenshots/hero.jpg';
-import kenBurnsImage from '../../assets/screenshots/ken-burns.jpg';
 import styles from './TVShowcase.module.css';
 
 export function TVShowcase() {
